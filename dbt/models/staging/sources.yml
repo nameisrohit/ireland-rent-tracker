@@ -1,0 +1,35 @@
+# models/staging/sources.yml
+# ============================================================
+# Defines our source data for dbt
+#
+# What is a source?
+# A source tells dbt where the raw data lives.
+# Instead of hardcoding table names in SQL,
+# we reference them as {{ source('raw_data', 'rtb_rents') }}
+# dbt then knows exactly where to find the data.
+# ============================================================
+
+version: 2
+
+sources:
+  - name: raw_data
+    schema: raw_data
+    description: "Raw RTB rent data loaded from S3"
+    tables:
+      - name: rtb_rents
+        description: "RTB average monthly rent by location 2008-2024"
+        columns:
+          - name: year
+            description: "Year of the rent record"
+          - name: bedrooms
+            description: "Number of bedrooms category"
+          - name: property_type
+            description: "Type of property"
+          - name: location
+            description: "Specific area or town"
+          - name: avg_monthly_rent
+            description: "Average monthly rent in euros"
+          - name: county
+            description: "County extracted from location"
+          - name: scraped_at
+            description: "Timestamp when data was scraped"
