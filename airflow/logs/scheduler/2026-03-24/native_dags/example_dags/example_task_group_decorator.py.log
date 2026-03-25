@@ -1,0 +1,58 @@
+[2026-03-24T12:05:26.889+0000] {processor.py:186} INFO - Started process (PID=45525) to work on /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/example_task_group_decorator.py
+[2026-03-24T12:05:26.890+0000] {processor.py:914} INFO - Processing file /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/example_task_group_decorator.py for tasks to queue
+[2026-03-24T12:05:26.893+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:05:26.893+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/example_task_group_decorator.py
+[2026-03-24T12:05:26.922+0000] {processor.py:925} INFO - DAG(s) 'example_task_group_decorator' retrieved from /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/example_task_group_decorator.py
+[2026-03-24T12:05:27.051+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:05:27.051+0000] {override.py:1930} INFO - Created Permission View: can delete on DAG:example_task_group_decorator
+[2026-03-24T12:05:27.066+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:05:27.066+0000] {override.py:1930} INFO - Created Permission View: can edit on DAG:example_task_group_decorator
+[2026-03-24T12:05:27.078+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:05:27.077+0000] {override.py:1930} INFO - Created Permission View: can read on DAG:example_task_group_decorator
+[2026-03-24T12:05:27.100+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:05:27.100+0000] {override.py:1930} INFO - Created Permission View: can delete on DAG Run:example_task_group_decorator
+[2026-03-24T12:05:27.112+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:05:27.112+0000] {override.py:1930} INFO - Created Permission View: can create on DAG Run:example_task_group_decorator
+[2026-03-24T12:05:27.124+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:05:27.123+0000] {override.py:1930} INFO - Created Permission View: can read on DAG Run:example_task_group_decorator
+[2026-03-24T12:05:27.134+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:05:27.134+0000] {override.py:1930} INFO - Created Permission View: menu access on DAG Run:example_task_group_decorator
+[2026-03-24T12:05:27.134+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:05:27.134+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-03-24T12:05:27.146+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:05:27.146+0000] {dag.py:3262} INFO - Creating ORM DAG for example_task_group_decorator
+[2026-03-24T12:05:27.147+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:05:27.147+0000] {dag.py:4180} INFO - Setting next_dagrun for example_task_group_decorator to None, run_after=None
+[2026-03-24T12:05:27.168+0000] {processor.py:208} INFO - Processing /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/example_task_group_decorator.py took 0.284 seconds
+[2026-03-24T12:06:34.117+0000] {processor.py:186} INFO - Started process (PID=45691) to work on /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/example_task_group_decorator.py
+[2026-03-24T12:06:34.121+0000] {processor.py:914} INFO - Processing file /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/example_task_group_decorator.py for tasks to queue
+[2026-03-24T12:06:34.123+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:06:34.123+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/example_task_group_decorator.py
+[2026-03-24T12:06:34.140+0000] {processor.py:925} INFO - DAG(s) 'example_task_group_decorator' retrieved from /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/example_task_group_decorator.py
+[2026-03-24T12:06:34.160+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:06:34.159+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-03-24T12:06:34.172+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:06:34.172+0000] {dag.py:4180} INFO - Setting next_dagrun for example_task_group_decorator to None, run_after=None
+[2026-03-24T12:06:34.196+0000] {processor.py:208} INFO - Processing /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/example_task_group_decorator.py took 0.085 seconds
+[2026-03-24T12:07:28.172+0000] {processor.py:186} INFO - Started process (PID=45877) to work on /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/example_task_group_decorator.py
+[2026-03-24T12:07:28.173+0000] {processor.py:914} INFO - Processing file /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/example_task_group_decorator.py for tasks to queue
+[2026-03-24T12:07:28.178+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:07:28.176+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/example_task_group_decorator.py
+[2026-03-24T12:07:28.196+0000] {processor.py:925} INFO - DAG(s) 'example_task_group_decorator' retrieved from /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/example_task_group_decorator.py
+[2026-03-24T12:07:28.220+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:07:28.219+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-03-24T12:07:28.232+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:07:28.232+0000] {dag.py:4180} INFO - Setting next_dagrun for example_task_group_decorator to None, run_after=None
+[2026-03-24T12:07:28.263+0000] {processor.py:208} INFO - Processing /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/example_task_group_decorator.py took 0.099 seconds
+[2026-03-24T12:08:26.448+0000] {processor.py:186} INFO - Started process (PID=46054) to work on /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/example_task_group_decorator.py
+[2026-03-24T12:08:26.450+0000] {processor.py:914} INFO - Processing file /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/example_task_group_decorator.py for tasks to queue
+[2026-03-24T12:08:26.454+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:08:26.454+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/example_task_group_decorator.py
+[2026-03-24T12:08:26.470+0000] {processor.py:925} INFO - DAG(s) 'example_task_group_decorator' retrieved from /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/example_task_group_decorator.py
+[2026-03-24T12:08:26.570+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:08:26.569+0000] {override.py:1930} INFO - Created Permission View: can delete on DAG:example_task_group_decorator
+[2026-03-24T12:08:26.585+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:08:26.584+0000] {override.py:1930} INFO - Created Permission View: can edit on DAG:example_task_group_decorator
+[2026-03-24T12:08:26.597+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:08:26.597+0000] {override.py:1930} INFO - Created Permission View: can read on DAG:example_task_group_decorator
+[2026-03-24T12:08:26.614+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:08:26.613+0000] {override.py:1930} INFO - Created Permission View: can delete on DAG Run:example_task_group_decorator
+[2026-03-24T12:08:26.624+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:08:26.623+0000] {override.py:1930} INFO - Created Permission View: can create on DAG Run:example_task_group_decorator
+[2026-03-24T12:08:26.633+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:08:26.633+0000] {override.py:1930} INFO - Created Permission View: can read on DAG Run:example_task_group_decorator
+[2026-03-24T12:08:26.644+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:08:26.643+0000] {override.py:1930} INFO - Created Permission View: menu access on DAG Run:example_task_group_decorator
+[2026-03-24T12:08:26.644+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:08:26.644+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-03-24T12:08:26.656+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:08:26.655+0000] {dag.py:3262} INFO - Creating ORM DAG for example_task_group_decorator
+[2026-03-24T12:08:26.657+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:08:26.657+0000] {dag.py:4180} INFO - Setting next_dagrun for example_task_group_decorator to None, run_after=None
+[2026-03-24T12:08:26.682+0000] {processor.py:208} INFO - Processing /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/example_task_group_decorator.py took 0.240 seconds
+[2026-03-24T12:09:44.950+0000] {processor.py:186} INFO - Started process (PID=46522) to work on /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/example_task_group_decorator.py
+[2026-03-24T12:09:44.952+0000] {processor.py:914} INFO - Processing file /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/example_task_group_decorator.py for tasks to queue
+[2026-03-24T12:09:44.954+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:09:44.954+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/example_task_group_decorator.py
+[2026-03-24T12:09:44.969+0000] {processor.py:925} INFO - DAG(s) 'example_task_group_decorator' retrieved from /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/example_task_group_decorator.py
+[2026-03-24T12:09:44.991+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:09:44.991+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-03-24T12:09:45.003+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:09:45.003+0000] {dag.py:4180} INFO - Setting next_dagrun for example_task_group_decorator to None, run_after=None
+[2026-03-24T12:09:45.030+0000] {processor.py:208} INFO - Processing /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/example_task_group_decorator.py took 0.085 seconds
+[2026-03-24T12:10:43.244+0000] {processor.py:186} INFO - Started process (PID=46757) to work on /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/example_task_group_decorator.py
+[2026-03-24T12:10:43.246+0000] {processor.py:914} INFO - Processing file /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/example_task_group_decorator.py for tasks to queue
+[2026-03-24T12:10:43.249+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:10:43.248+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/example_task_group_decorator.py
+[2026-03-24T12:10:43.265+0000] {processor.py:925} INFO - DAG(s) 'example_task_group_decorator' retrieved from /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/example_task_group_decorator.py
+[2026-03-24T12:10:43.286+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:10:43.286+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-03-24T12:10:43.302+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:10:43.302+0000] {dag.py:4180} INFO - Setting next_dagrun for example_task_group_decorator to None, run_after=None
+[2026-03-24T12:10:43.329+0000] {processor.py:208} INFO - Processing /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/example_task_group_decorator.py took 0.090 seconds

@@ -1,0 +1,58 @@
+[2026-03-24T12:05:48.116+0000] {processor.py:186} INFO - Started process (PID=45556) to work on /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/example_skip_dag.py
+[2026-03-24T12:05:48.118+0000] {processor.py:914} INFO - Processing file /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/example_skip_dag.py for tasks to queue
+[2026-03-24T12:05:48.121+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:05:48.120+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/example_skip_dag.py
+[2026-03-24T12:05:48.138+0000] {processor.py:925} INFO - DAG(s) 'example_skip_dag' retrieved from /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/example_skip_dag.py
+[2026-03-24T12:05:48.279+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:05:48.279+0000] {override.py:1930} INFO - Created Permission View: can delete on DAG:example_skip_dag
+[2026-03-24T12:05:48.297+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:05:48.297+0000] {override.py:1930} INFO - Created Permission View: can edit on DAG:example_skip_dag
+[2026-03-24T12:05:48.307+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:05:48.307+0000] {override.py:1930} INFO - Created Permission View: can read on DAG:example_skip_dag
+[2026-03-24T12:05:48.327+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:05:48.327+0000] {override.py:1930} INFO - Created Permission View: can delete on DAG Run:example_skip_dag
+[2026-03-24T12:05:48.342+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:05:48.341+0000] {override.py:1930} INFO - Created Permission View: can create on DAG Run:example_skip_dag
+[2026-03-24T12:05:48.354+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:05:48.353+0000] {override.py:1930} INFO - Created Permission View: can read on DAG Run:example_skip_dag
+[2026-03-24T12:05:48.367+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:05:48.367+0000] {override.py:1930} INFO - Created Permission View: menu access on DAG Run:example_skip_dag
+[2026-03-24T12:05:48.368+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:05:48.368+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-03-24T12:05:48.390+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:05:48.390+0000] {dag.py:3262} INFO - Creating ORM DAG for example_skip_dag
+[2026-03-24T12:05:48.409+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:05:48.409+0000] {dag.py:4180} INFO - Setting next_dagrun for example_skip_dag to 2026-03-23 00:00:00+00:00, run_after=2026-03-24 00:00:00+00:00
+[2026-03-24T12:05:48.449+0000] {processor.py:208} INFO - Processing /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/example_skip_dag.py took 0.347 seconds
+[2026-03-24T12:06:51.377+0000] {processor.py:186} INFO - Started process (PID=45714) to work on /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/example_skip_dag.py
+[2026-03-24T12:06:51.379+0000] {processor.py:914} INFO - Processing file /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/example_skip_dag.py for tasks to queue
+[2026-03-24T12:06:51.382+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:06:51.382+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/example_skip_dag.py
+[2026-03-24T12:06:51.390+0000] {processor.py:925} INFO - DAG(s) 'example_skip_dag' retrieved from /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/example_skip_dag.py
+[2026-03-24T12:06:51.421+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:06:51.420+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-03-24T12:06:51.454+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:06:51.454+0000] {dag.py:4180} INFO - Setting next_dagrun for example_skip_dag to 2026-03-23 00:00:00+00:00, run_after=2026-03-24 00:00:00+00:00
+[2026-03-24T12:06:51.490+0000] {processor.py:208} INFO - Processing /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/example_skip_dag.py took 0.122 seconds
+[2026-03-24T12:07:49.625+0000] {processor.py:186} INFO - Started process (PID=45914) to work on /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/example_skip_dag.py
+[2026-03-24T12:07:49.627+0000] {processor.py:914} INFO - Processing file /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/example_skip_dag.py for tasks to queue
+[2026-03-24T12:07:49.629+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:07:49.628+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/example_skip_dag.py
+[2026-03-24T12:07:49.636+0000] {processor.py:925} INFO - DAG(s) 'example_skip_dag' retrieved from /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/example_skip_dag.py
+[2026-03-24T12:07:49.653+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:07:49.653+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-03-24T12:07:49.672+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:07:49.671+0000] {dag.py:4180} INFO - Setting next_dagrun for example_skip_dag to 2026-03-23 00:00:00+00:00, run_after=2026-03-24 00:00:00+00:00
+[2026-03-24T12:07:49.696+0000] {processor.py:208} INFO - Processing /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/example_skip_dag.py took 0.077 seconds
+[2026-03-24T12:09:05.539+0000] {processor.py:186} INFO - Started process (PID=46408) to work on /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/example_skip_dag.py
+[2026-03-24T12:09:05.541+0000] {processor.py:914} INFO - Processing file /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/example_skip_dag.py for tasks to queue
+[2026-03-24T12:09:05.550+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:09:05.549+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/example_skip_dag.py
+[2026-03-24T12:09:05.563+0000] {processor.py:925} INFO - DAG(s) 'example_skip_dag' retrieved from /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/example_skip_dag.py
+[2026-03-24T12:09:05.731+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:09:05.730+0000] {override.py:1930} INFO - Created Permission View: can delete on DAG:example_skip_dag
+[2026-03-24T12:09:05.757+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:09:05.757+0000] {override.py:1930} INFO - Created Permission View: can edit on DAG:example_skip_dag
+[2026-03-24T12:09:05.773+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:09:05.772+0000] {override.py:1930} INFO - Created Permission View: can read on DAG:example_skip_dag
+[2026-03-24T12:09:05.803+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:09:05.802+0000] {override.py:1930} INFO - Created Permission View: can delete on DAG Run:example_skip_dag
+[2026-03-24T12:09:05.817+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:09:05.817+0000] {override.py:1930} INFO - Created Permission View: can create on DAG Run:example_skip_dag
+[2026-03-24T12:09:05.831+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:09:05.830+0000] {override.py:1930} INFO - Created Permission View: can read on DAG Run:example_skip_dag
+[2026-03-24T12:09:05.846+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:09:05.846+0000] {override.py:1930} INFO - Created Permission View: menu access on DAG Run:example_skip_dag
+[2026-03-24T12:09:05.846+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:09:05.846+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-03-24T12:09:05.859+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:09:05.859+0000] {dag.py:3262} INFO - Creating ORM DAG for example_skip_dag
+[2026-03-24T12:09:05.868+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:09:05.868+0000] {dag.py:4180} INFO - Setting next_dagrun for example_skip_dag to 2026-03-23 00:00:00+00:00, run_after=2026-03-24 00:00:00+00:00
+[2026-03-24T12:09:05.895+0000] {processor.py:208} INFO - Processing /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/example_skip_dag.py took 0.365 seconds
+[2026-03-24T12:10:10.113+0000] {processor.py:186} INFO - Started process (PID=46697) to work on /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/example_skip_dag.py
+[2026-03-24T12:10:10.118+0000] {processor.py:914} INFO - Processing file /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/example_skip_dag.py for tasks to queue
+[2026-03-24T12:10:10.121+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:10:10.120+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/example_skip_dag.py
+[2026-03-24T12:10:10.134+0000] {processor.py:925} INFO - DAG(s) 'example_skip_dag' retrieved from /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/example_skip_dag.py
+[2026-03-24T12:10:10.168+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:10:10.168+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-03-24T12:10:10.209+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:10:10.209+0000] {dag.py:4180} INFO - Setting next_dagrun for example_skip_dag to 2026-03-23 00:00:00+00:00, run_after=2026-03-24 00:00:00+00:00
+[2026-03-24T12:10:10.251+0000] {processor.py:208} INFO - Processing /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/example_skip_dag.py took 0.143 seconds
+[2026-03-24T12:11:05.560+0000] {processor.py:186} INFO - Started process (PID=46795) to work on /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/example_skip_dag.py
+[2026-03-24T12:11:05.562+0000] {processor.py:914} INFO - Processing file /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/example_skip_dag.py for tasks to queue
+[2026-03-24T12:11:05.564+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:11:05.563+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/example_skip_dag.py
+[2026-03-24T12:11:05.571+0000] {processor.py:925} INFO - DAG(s) 'example_skip_dag' retrieved from /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/example_skip_dag.py
+[2026-03-24T12:11:05.592+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:11:05.592+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-03-24T12:11:05.613+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:11:05.613+0000] {dag.py:4180} INFO - Setting next_dagrun for example_skip_dag to 2026-03-23 00:00:00+00:00, run_after=2026-03-24 00:00:00+00:00
+[2026-03-24T12:11:05.637+0000] {processor.py:208} INFO - Processing /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/example_skip_dag.py took 0.082 seconds

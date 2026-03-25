@@ -1,0 +1,58 @@
+[2026-03-24T12:05:58.369+0000] {processor.py:186} INFO - Started process (PID=45645) to work on /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/example_params_trigger_ui.py
+[2026-03-24T12:05:58.371+0000] {processor.py:914} INFO - Processing file /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/example_params_trigger_ui.py for tasks to queue
+[2026-03-24T12:05:58.374+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:05:58.374+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/example_params_trigger_ui.py
+[2026-03-24T12:05:58.387+0000] {processor.py:925} INFO - DAG(s) 'example_params_trigger_ui' retrieved from /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/example_params_trigger_ui.py
+[2026-03-24T12:05:58.545+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:05:58.544+0000] {override.py:1930} INFO - Created Permission View: can delete on DAG:example_params_trigger_ui
+[2026-03-24T12:05:58.562+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:05:58.562+0000] {override.py:1930} INFO - Created Permission View: can edit on DAG:example_params_trigger_ui
+[2026-03-24T12:05:58.579+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:05:58.578+0000] {override.py:1930} INFO - Created Permission View: can read on DAG:example_params_trigger_ui
+[2026-03-24T12:05:58.598+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:05:58.598+0000] {override.py:1930} INFO - Created Permission View: can delete on DAG Run:example_params_trigger_ui
+[2026-03-24T12:05:58.611+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:05:58.610+0000] {override.py:1930} INFO - Created Permission View: can create on DAG Run:example_params_trigger_ui
+[2026-03-24T12:05:58.622+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:05:58.622+0000] {override.py:1930} INFO - Created Permission View: can read on DAG Run:example_params_trigger_ui
+[2026-03-24T12:05:58.634+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:05:58.634+0000] {override.py:1930} INFO - Created Permission View: menu access on DAG Run:example_params_trigger_ui
+[2026-03-24T12:05:58.635+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:05:58.635+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-03-24T12:05:58.649+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:05:58.648+0000] {dag.py:3262} INFO - Creating ORM DAG for example_params_trigger_ui
+[2026-03-24T12:05:58.649+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:05:58.649+0000] {dag.py:4180} INFO - Setting next_dagrun for example_params_trigger_ui to None, run_after=None
+[2026-03-24T12:05:58.678+0000] {processor.py:208} INFO - Processing /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/example_params_trigger_ui.py took 0.316 seconds
+[2026-03-24T12:07:02.789+0000] {processor.py:186} INFO - Started process (PID=45734) to work on /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/example_params_trigger_ui.py
+[2026-03-24T12:07:02.790+0000] {processor.py:914} INFO - Processing file /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/example_params_trigger_ui.py for tasks to queue
+[2026-03-24T12:07:02.793+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:07:02.792+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/example_params_trigger_ui.py
+[2026-03-24T12:07:02.806+0000] {processor.py:925} INFO - DAG(s) 'example_params_trigger_ui' retrieved from /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/example_params_trigger_ui.py
+[2026-03-24T12:07:02.844+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:07:02.844+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-03-24T12:07:02.857+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:07:02.857+0000] {dag.py:4180} INFO - Setting next_dagrun for example_params_trigger_ui to None, run_after=None
+[2026-03-24T12:07:02.887+0000] {processor.py:208} INFO - Processing /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/example_params_trigger_ui.py took 0.104 seconds
+[2026-03-24T12:07:57.569+0000] {processor.py:186} INFO - Started process (PID=45939) to work on /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/example_params_trigger_ui.py
+[2026-03-24T12:07:57.571+0000] {processor.py:914} INFO - Processing file /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/example_params_trigger_ui.py for tasks to queue
+[2026-03-24T12:07:57.575+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:07:57.574+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/example_params_trigger_ui.py
+[2026-03-24T12:07:57.597+0000] {processor.py:925} INFO - DAG(s) 'example_params_trigger_ui' retrieved from /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/example_params_trigger_ui.py
+[2026-03-24T12:07:57.644+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:07:57.643+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-03-24T12:07:57.662+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:07:57.662+0000] {dag.py:4180} INFO - Setting next_dagrun for example_params_trigger_ui to None, run_after=None
+[2026-03-24T12:07:57.695+0000] {processor.py:208} INFO - Processing /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/example_params_trigger_ui.py took 0.138 seconds
+[2026-03-24T12:09:17.805+0000] {processor.py:186} INFO - Started process (PID=46421) to work on /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/example_params_trigger_ui.py
+[2026-03-24T12:09:17.806+0000] {processor.py:914} INFO - Processing file /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/example_params_trigger_ui.py for tasks to queue
+[2026-03-24T12:09:17.809+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:09:17.808+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/example_params_trigger_ui.py
+[2026-03-24T12:09:17.823+0000] {processor.py:925} INFO - DAG(s) 'example_params_trigger_ui' retrieved from /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/example_params_trigger_ui.py
+[2026-03-24T12:09:17.960+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:09:17.959+0000] {override.py:1930} INFO - Created Permission View: can delete on DAG:example_params_trigger_ui
+[2026-03-24T12:09:17.975+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:09:17.975+0000] {override.py:1930} INFO - Created Permission View: can edit on DAG:example_params_trigger_ui
+[2026-03-24T12:09:17.986+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:09:17.986+0000] {override.py:1930} INFO - Created Permission View: can read on DAG:example_params_trigger_ui
+[2026-03-24T12:09:18.009+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:09:18.009+0000] {override.py:1930} INFO - Created Permission View: can delete on DAG Run:example_params_trigger_ui
+[2026-03-24T12:09:18.021+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:09:18.021+0000] {override.py:1930} INFO - Created Permission View: can create on DAG Run:example_params_trigger_ui
+[2026-03-24T12:09:18.031+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:09:18.031+0000] {override.py:1930} INFO - Created Permission View: can read on DAG Run:example_params_trigger_ui
+[2026-03-24T12:09:18.042+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:09:18.041+0000] {override.py:1930} INFO - Created Permission View: menu access on DAG Run:example_params_trigger_ui
+[2026-03-24T12:09:18.042+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:09:18.042+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-03-24T12:09:18.055+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:09:18.054+0000] {dag.py:3262} INFO - Creating ORM DAG for example_params_trigger_ui
+[2026-03-24T12:09:18.055+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:09:18.055+0000] {dag.py:4180} INFO - Setting next_dagrun for example_params_trigger_ui to None, run_after=None
+[2026-03-24T12:09:18.082+0000] {processor.py:208} INFO - Processing /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/example_params_trigger_ui.py took 0.282 seconds
+[2026-03-24T12:10:19.400+0000] {processor.py:186} INFO - Started process (PID=46712) to work on /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/example_params_trigger_ui.py
+[2026-03-24T12:10:19.401+0000] {processor.py:914} INFO - Processing file /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/example_params_trigger_ui.py for tasks to queue
+[2026-03-24T12:10:19.404+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:10:19.403+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/example_params_trigger_ui.py
+[2026-03-24T12:10:19.422+0000] {processor.py:925} INFO - DAG(s) 'example_params_trigger_ui' retrieved from /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/example_params_trigger_ui.py
+[2026-03-24T12:10:19.466+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:10:19.466+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-03-24T12:10:19.481+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:10:19.481+0000] {dag.py:4180} INFO - Setting next_dagrun for example_params_trigger_ui to None, run_after=None
+[2026-03-24T12:10:19.510+0000] {processor.py:208} INFO - Processing /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/example_params_trigger_ui.py took 0.115 seconds
+[2026-03-24T12:11:14.708+0000] {processor.py:186} INFO - Started process (PID=46850) to work on /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/example_params_trigger_ui.py
+[2026-03-24T12:11:14.715+0000] {processor.py:914} INFO - Processing file /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/example_params_trigger_ui.py for tasks to queue
+[2026-03-24T12:11:14.718+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:11:14.718+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/example_params_trigger_ui.py
+[2026-03-24T12:11:14.737+0000] {processor.py:925} INFO - DAG(s) 'example_params_trigger_ui' retrieved from /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/example_params_trigger_ui.py
+[2026-03-24T12:11:14.799+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:11:14.799+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-03-24T12:11:14.835+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:11:14.835+0000] {dag.py:4180} INFO - Setting next_dagrun for example_params_trigger_ui to None, run_after=None
+[2026-03-24T12:11:14.886+0000] {processor.py:208} INFO - Processing /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/example_params_trigger_ui.py took 0.190 seconds

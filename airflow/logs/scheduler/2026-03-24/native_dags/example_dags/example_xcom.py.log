@@ -1,0 +1,58 @@
+[2026-03-24T12:05:25.472+0000] {processor.py:186} INFO - Started process (PID=45519) to work on /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-03-24T12:05:25.472+0000] {processor.py:914} INFO - Processing file /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2026-03-24T12:05:25.475+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:05:25.474+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-03-24T12:05:25.488+0000] {processor.py:925} INFO - DAG(s) 'example_xcom' retrieved from /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-03-24T12:05:25.609+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:05:25.608+0000] {override.py:1930} INFO - Created Permission View: can delete on DAG:example_xcom
+[2026-03-24T12:05:25.622+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:05:25.622+0000] {override.py:1930} INFO - Created Permission View: can edit on DAG:example_xcom
+[2026-03-24T12:05:25.636+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:05:25.635+0000] {override.py:1930} INFO - Created Permission View: can read on DAG:example_xcom
+[2026-03-24T12:05:25.655+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:05:25.654+0000] {override.py:1930} INFO - Created Permission View: can delete on DAG Run:example_xcom
+[2026-03-24T12:05:25.665+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:05:25.664+0000] {override.py:1930} INFO - Created Permission View: can create on DAG Run:example_xcom
+[2026-03-24T12:05:25.677+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:05:25.677+0000] {override.py:1930} INFO - Created Permission View: can read on DAG Run:example_xcom
+[2026-03-24T12:05:25.689+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:05:25.688+0000] {override.py:1930} INFO - Created Permission View: menu access on DAG Run:example_xcom
+[2026-03-24T12:05:25.689+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:05:25.689+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-03-24T12:05:25.700+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:05:25.700+0000] {dag.py:3262} INFO - Creating ORM DAG for example_xcom
+[2026-03-24T12:05:25.709+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:05:25.709+0000] {dag.py:4180} INFO - Setting next_dagrun for example_xcom to 2021-01-01 00:00:00+00:00, run_after=2021-01-01 00:00:00+00:00
+[2026-03-24T12:05:25.732+0000] {processor.py:208} INFO - Processing /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py took 0.265 seconds
+[2026-03-24T12:06:31.781+0000] {processor.py:186} INFO - Started process (PID=45689) to work on /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-03-24T12:06:31.785+0000] {processor.py:914} INFO - Processing file /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2026-03-24T12:06:31.788+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:06:31.787+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-03-24T12:06:31.797+0000] {processor.py:925} INFO - DAG(s) 'example_xcom' retrieved from /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-03-24T12:06:31.815+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:06:31.814+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-03-24T12:06:31.833+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:06:31.833+0000] {dag.py:4180} INFO - Setting next_dagrun for example_xcom to 2021-01-01 00:00:00+00:00, run_after=2021-01-01 00:00:00+00:00
+[2026-03-24T12:06:31.856+0000] {processor.py:208} INFO - Processing /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py took 0.081 seconds
+[2026-03-24T12:07:27.273+0000] {processor.py:186} INFO - Started process (PID=45863) to work on /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-03-24T12:07:27.275+0000] {processor.py:914} INFO - Processing file /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2026-03-24T12:07:27.280+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:07:27.279+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-03-24T12:07:27.304+0000] {processor.py:925} INFO - DAG(s) 'example_xcom' retrieved from /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-03-24T12:07:27.351+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:07:27.349+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-03-24T12:07:27.386+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:07:27.385+0000] {dag.py:4180} INFO - Setting next_dagrun for example_xcom to 2021-01-01 00:00:00+00:00, run_after=2021-01-01 00:00:00+00:00
+[2026-03-24T12:07:27.426+0000] {processor.py:208} INFO - Processing /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py took 0.169 seconds
+[2026-03-24T12:08:23.795+0000] {processor.py:186} INFO - Started process (PID=46027) to work on /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-03-24T12:08:23.797+0000] {processor.py:914} INFO - Processing file /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2026-03-24T12:08:23.800+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:08:23.800+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-03-24T12:08:23.816+0000] {processor.py:925} INFO - DAG(s) 'example_xcom' retrieved from /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-03-24T12:08:23.943+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:08:23.943+0000] {override.py:1930} INFO - Created Permission View: can delete on DAG:example_xcom
+[2026-03-24T12:08:23.960+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:08:23.960+0000] {override.py:1930} INFO - Created Permission View: can edit on DAG:example_xcom
+[2026-03-24T12:08:23.972+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:08:23.971+0000] {override.py:1930} INFO - Created Permission View: can read on DAG:example_xcom
+[2026-03-24T12:08:23.995+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:08:23.994+0000] {override.py:1930} INFO - Created Permission View: can delete on DAG Run:example_xcom
+[2026-03-24T12:08:24.005+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:08:24.005+0000] {override.py:1930} INFO - Created Permission View: can create on DAG Run:example_xcom
+[2026-03-24T12:08:24.016+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:08:24.016+0000] {override.py:1930} INFO - Created Permission View: can read on DAG Run:example_xcom
+[2026-03-24T12:08:24.027+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:08:24.026+0000] {override.py:1930} INFO - Created Permission View: menu access on DAG Run:example_xcom
+[2026-03-24T12:08:24.027+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:08:24.027+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-03-24T12:08:24.037+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:08:24.037+0000] {dag.py:3262} INFO - Creating ORM DAG for example_xcom
+[2026-03-24T12:08:24.046+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:08:24.045+0000] {dag.py:4180} INFO - Setting next_dagrun for example_xcom to 2021-01-01 00:00:00+00:00, run_after=2021-01-01 00:00:00+00:00
+[2026-03-24T12:08:24.067+0000] {processor.py:208} INFO - Processing /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py took 0.282 seconds
+[2026-03-24T12:09:42.663+0000] {processor.py:186} INFO - Started process (PID=46517) to work on /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-03-24T12:09:42.667+0000] {processor.py:914} INFO - Processing file /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2026-03-24T12:09:42.669+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:09:42.669+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-03-24T12:09:42.678+0000] {processor.py:925} INFO - DAG(s) 'example_xcom' retrieved from /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-03-24T12:09:42.696+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:09:42.696+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-03-24T12:09:42.715+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:09:42.715+0000] {dag.py:4180} INFO - Setting next_dagrun for example_xcom to 2021-01-01 00:00:00+00:00, run_after=2021-01-01 00:00:00+00:00
+[2026-03-24T12:09:42.740+0000] {processor.py:208} INFO - Processing /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py took 0.082 seconds
+[2026-03-24T12:10:41.358+0000] {processor.py:186} INFO - Started process (PID=46755) to work on /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-03-24T12:10:41.360+0000] {processor.py:914} INFO - Processing file /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py for tasks to queue
+[2026-03-24T12:10:41.362+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:10:41.362+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-03-24T12:10:41.374+0000] {processor.py:925} INFO - DAG(s) 'example_xcom' retrieved from /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py
+[2026-03-24T12:10:41.391+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:10:41.391+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-03-24T12:10:41.410+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:10:41.409+0000] {dag.py:4180} INFO - Setting next_dagrun for example_xcom to 2021-01-01 00:00:00+00:00, run_after=2021-01-01 00:00:00+00:00
+[2026-03-24T12:10:41.433+0000] {processor.py:208} INFO - Processing /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/example_xcom.py took 0.079 seconds

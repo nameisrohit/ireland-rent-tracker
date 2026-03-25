@@ -1,0 +1,51 @@
+[2026-03-24T12:06:16.391+0000] {processor.py:186} INFO - Started process (PID=45667) to work on /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/example_bash_operator.py
+[2026-03-24T12:06:16.392+0000] {processor.py:914} INFO - Processing file /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/example_bash_operator.py for tasks to queue
+[2026-03-24T12:06:16.394+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:06:16.394+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/example_bash_operator.py
+[2026-03-24T12:06:16.408+0000] {processor.py:925} INFO - DAG(s) 'example_bash_operator' retrieved from /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/example_bash_operator.py
+[2026-03-24T12:06:16.541+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:06:16.539+0000] {override.py:1930} INFO - Created Permission View: can delete on DAG:example_bash_operator
+[2026-03-24T12:06:16.558+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:06:16.557+0000] {override.py:1930} INFO - Created Permission View: can edit on DAG:example_bash_operator
+[2026-03-24T12:06:16.569+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:06:16.569+0000] {override.py:1930} INFO - Created Permission View: can read on DAG:example_bash_operator
+[2026-03-24T12:06:16.589+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:06:16.589+0000] {override.py:1930} INFO - Created Permission View: can delete on DAG Run:example_bash_operator
+[2026-03-24T12:06:16.602+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:06:16.601+0000] {override.py:1930} INFO - Created Permission View: can create on DAG Run:example_bash_operator
+[2026-03-24T12:06:16.613+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:06:16.612+0000] {override.py:1930} INFO - Created Permission View: can read on DAG Run:example_bash_operator
+[2026-03-24T12:06:16.626+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:06:16.626+0000] {override.py:1930} INFO - Created Permission View: menu access on DAG Run:example_bash_operator
+[2026-03-24T12:06:16.627+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:06:16.627+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-03-24T12:06:16.641+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:06:16.641+0000] {dag.py:3262} INFO - Creating ORM DAG for example_bash_operator
+[2026-03-24T12:06:16.653+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:06:16.653+0000] {dag.py:4180} INFO - Setting next_dagrun for example_bash_operator to 2026-03-23 00:00:00+00:00, run_after=2026-03-24 00:00:00+00:00
+[2026-03-24T12:06:16.678+0000] {processor.py:208} INFO - Processing /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/example_bash_operator.py took 0.292 seconds
+[2026-03-24T12:07:15.941+0000] {processor.py:186} INFO - Started process (PID=45752) to work on /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/example_bash_operator.py
+[2026-03-24T12:07:15.943+0000] {processor.py:914} INFO - Processing file /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/example_bash_operator.py for tasks to queue
+[2026-03-24T12:07:15.945+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:07:15.944+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/example_bash_operator.py
+[2026-03-24T12:07:15.956+0000] {processor.py:925} INFO - DAG(s) 'example_bash_operator' retrieved from /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/example_bash_operator.py
+[2026-03-24T12:07:15.975+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:07:15.974+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-03-24T12:07:15.992+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:07:15.992+0000] {dag.py:4180} INFO - Setting next_dagrun for example_bash_operator to 2026-03-23 00:00:00+00:00, run_after=2026-03-24 00:00:00+00:00
+[2026-03-24T12:07:16.015+0000] {processor.py:208} INFO - Processing /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/example_bash_operator.py took 0.079 seconds
+[2026-03-24T12:08:48.958+0000] {processor.py:186} INFO - Started process (PID=46270) to work on /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/example_bash_operator.py
+[2026-03-24T12:08:48.963+0000] {processor.py:914} INFO - Processing file /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/example_bash_operator.py for tasks to queue
+[2026-03-24T12:08:48.967+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:08:48.966+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/example_bash_operator.py
+[2026-03-24T12:08:48.997+0000] {processor.py:925} INFO - DAG(s) 'example_bash_operator' retrieved from /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/example_bash_operator.py
+[2026-03-24T12:08:49.115+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:08:49.114+0000] {override.py:1930} INFO - Created Permission View: can delete on DAG:example_bash_operator
+[2026-03-24T12:08:49.130+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:08:49.129+0000] {override.py:1930} INFO - Created Permission View: can edit on DAG:example_bash_operator
+[2026-03-24T12:08:49.145+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:08:49.144+0000] {override.py:1930} INFO - Created Permission View: can read on DAG:example_bash_operator
+[2026-03-24T12:08:49.167+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:08:49.166+0000] {override.py:1930} INFO - Created Permission View: can delete on DAG Run:example_bash_operator
+[2026-03-24T12:08:49.178+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:08:49.177+0000] {override.py:1930} INFO - Created Permission View: can create on DAG Run:example_bash_operator
+[2026-03-24T12:08:49.191+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:08:49.190+0000] {override.py:1930} INFO - Created Permission View: can read on DAG Run:example_bash_operator
+[2026-03-24T12:08:49.205+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:08:49.205+0000] {override.py:1930} INFO - Created Permission View: menu access on DAG Run:example_bash_operator
+[2026-03-24T12:08:49.205+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:08:49.205+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-03-24T12:08:49.220+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:08:49.220+0000] {dag.py:3262} INFO - Creating ORM DAG for example_bash_operator
+[2026-03-24T12:08:49.230+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:08:49.229+0000] {dag.py:4180} INFO - Setting next_dagrun for example_bash_operator to 2026-03-23 00:00:00+00:00, run_after=2026-03-24 00:00:00+00:00
+[2026-03-24T12:08:49.252+0000] {processor.py:208} INFO - Processing /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/example_bash_operator.py took 0.300 seconds
+[2026-03-24T12:10:01.773+0000] {processor.py:186} INFO - Started process (PID=46688) to work on /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/example_bash_operator.py
+[2026-03-24T12:10:01.775+0000] {processor.py:914} INFO - Processing file /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/example_bash_operator.py for tasks to queue
+[2026-03-24T12:10:01.777+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:10:01.777+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/example_bash_operator.py
+[2026-03-24T12:10:01.794+0000] {processor.py:925} INFO - DAG(s) 'example_bash_operator' retrieved from /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/example_bash_operator.py
+[2026-03-24T12:10:01.823+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:10:01.823+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-03-24T12:10:01.851+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:10:01.850+0000] {dag.py:4180} INFO - Setting next_dagrun for example_bash_operator to 2026-03-23 00:00:00+00:00, run_after=2026-03-24 00:00:00+00:00
+[2026-03-24T12:10:01.883+0000] {processor.py:208} INFO - Processing /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/example_bash_operator.py took 0.115 seconds
+[2026-03-24T12:10:59.631+0000] {processor.py:186} INFO - Started process (PID=46780) to work on /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/example_bash_operator.py
+[2026-03-24T12:10:59.633+0000] {processor.py:914} INFO - Processing file /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/example_bash_operator.py for tasks to queue
+[2026-03-24T12:10:59.635+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:10:59.635+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/example_bash_operator.py
+[2026-03-24T12:10:59.650+0000] {processor.py:925} INFO - DAG(s) 'example_bash_operator' retrieved from /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/example_bash_operator.py
+[2026-03-24T12:10:59.673+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:10:59.673+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-03-24T12:10:59.695+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:10:59.695+0000] {dag.py:4180} INFO - Setting next_dagrun for example_bash_operator to 2026-03-23 00:00:00+00:00, run_after=2026-03-24 00:00:00+00:00
+[2026-03-24T12:10:59.722+0000] {processor.py:208} INFO - Processing /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/example_bash_operator.py took 0.096 seconds

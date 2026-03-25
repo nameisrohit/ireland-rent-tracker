@@ -1,0 +1,65 @@
+[2026-03-24T12:05:17.667+0000] {processor.py:186} INFO - Started process (PID=45507) to work on /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2026-03-24T12:05:17.668+0000] {processor.py:914} INFO - Processing file /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py for tasks to queue
+[2026-03-24T12:05:17.670+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:05:17.670+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2026-03-24T12:05:17.683+0000] {processor.py:925} INFO - DAG(s) 'tutorial_dag' retrieved from /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2026-03-24T12:05:17.808+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:05:17.807+0000] {override.py:1930} INFO - Created Permission View: can delete on DAG:tutorial_dag
+[2026-03-24T12:05:17.823+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:05:17.823+0000] {override.py:1930} INFO - Created Permission View: can edit on DAG:tutorial_dag
+[2026-03-24T12:05:17.834+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:05:17.834+0000] {override.py:1930} INFO - Created Permission View: can read on DAG:tutorial_dag
+[2026-03-24T12:05:17.854+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:05:17.854+0000] {override.py:1930} INFO - Created Permission View: can delete on DAG Run:tutorial_dag
+[2026-03-24T12:05:17.864+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:05:17.864+0000] {override.py:1930} INFO - Created Permission View: can create on DAG Run:tutorial_dag
+[2026-03-24T12:05:17.876+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:05:17.875+0000] {override.py:1930} INFO - Created Permission View: can read on DAG Run:tutorial_dag
+[2026-03-24T12:05:17.887+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:05:17.887+0000] {override.py:1930} INFO - Created Permission View: menu access on DAG Run:tutorial_dag
+[2026-03-24T12:05:17.887+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:05:17.887+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-03-24T12:05:17.898+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:05:17.898+0000] {dag.py:3262} INFO - Creating ORM DAG for tutorial_dag
+[2026-03-24T12:05:17.899+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:05:17.899+0000] {dag.py:4180} INFO - Setting next_dagrun for tutorial_dag to None, run_after=None
+[2026-03-24T12:05:17.923+0000] {processor.py:208} INFO - Processing /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py took 0.261 seconds
+[2026-03-24T12:06:24.574+0000] {processor.py:186} INFO - Started process (PID=45675) to work on /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2026-03-24T12:06:24.577+0000] {processor.py:914} INFO - Processing file /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py for tasks to queue
+[2026-03-24T12:06:24.580+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:06:24.580+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2026-03-24T12:06:24.589+0000] {processor.py:925} INFO - DAG(s) 'tutorial_dag' retrieved from /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2026-03-24T12:06:24.606+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:06:24.606+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-03-24T12:06:24.620+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:06:24.620+0000] {dag.py:4180} INFO - Setting next_dagrun for tutorial_dag to None, run_after=None
+[2026-03-24T12:06:24.647+0000] {processor.py:208} INFO - Processing /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py took 0.078 seconds
+[2026-03-24T12:07:20.717+0000] {processor.py:186} INFO - Started process (PID=45831) to work on /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2026-03-24T12:07:20.724+0000] {processor.py:914} INFO - Processing file /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py for tasks to queue
+[2026-03-24T12:07:20.727+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:07:20.726+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2026-03-24T12:07:20.735+0000] {processor.py:925} INFO - DAG(s) 'tutorial_dag' retrieved from /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2026-03-24T12:07:20.751+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:07:20.751+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-03-24T12:07:20.772+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:07:20.771+0000] {dag.py:4180} INFO - Setting next_dagrun for tutorial_dag to None, run_after=None
+[2026-03-24T12:07:20.810+0000] {processor.py:208} INFO - Processing /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py took 0.102 seconds
+[2026-03-24T12:08:15.290+0000] {processor.py:186} INFO - Started process (PID=46011) to work on /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2026-03-24T12:08:15.294+0000] {processor.py:914} INFO - Processing file /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py for tasks to queue
+[2026-03-24T12:08:15.296+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:08:15.296+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2026-03-24T12:08:15.306+0000] {processor.py:925} INFO - DAG(s) 'tutorial_dag' retrieved from /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2026-03-24T12:08:15.416+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:08:15.415+0000] {override.py:1930} INFO - Created Permission View: can delete on DAG:tutorial_dag
+[2026-03-24T12:08:15.433+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:08:15.432+0000] {override.py:1930} INFO - Created Permission View: can edit on DAG:tutorial_dag
+[2026-03-24T12:08:15.445+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:08:15.445+0000] {override.py:1930} INFO - Created Permission View: can read on DAG:tutorial_dag
+[2026-03-24T12:08:15.464+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:08:15.464+0000] {override.py:1930} INFO - Created Permission View: can delete on DAG Run:tutorial_dag
+[2026-03-24T12:08:15.475+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:08:15.475+0000] {override.py:1930} INFO - Created Permission View: can create on DAG Run:tutorial_dag
+[2026-03-24T12:08:15.486+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:08:15.485+0000] {override.py:1930} INFO - Created Permission View: can read on DAG Run:tutorial_dag
+[2026-03-24T12:08:15.495+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:08:15.495+0000] {override.py:1930} INFO - Created Permission View: menu access on DAG Run:tutorial_dag
+[2026-03-24T12:08:15.495+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:08:15.495+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-03-24T12:08:15.506+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:08:15.506+0000] {dag.py:3262} INFO - Creating ORM DAG for tutorial_dag
+[2026-03-24T12:08:15.506+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:08:15.506+0000] {dag.py:4180} INFO - Setting next_dagrun for tutorial_dag to None, run_after=None
+[2026-03-24T12:08:15.525+0000] {processor.py:208} INFO - Processing /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py took 0.241 seconds
+[2026-03-24T12:08:58.324+0000] {processor.py:186} INFO - Started process (PID=46317) to work on /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2026-03-24T12:08:58.326+0000] {processor.py:914} INFO - Processing file /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py for tasks to queue
+[2026-03-24T12:08:58.329+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:08:58.328+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2026-03-24T12:08:58.339+0000] {processor.py:925} INFO - DAG(s) 'tutorial_dag' retrieved from /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2026-03-24T12:08:58.360+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:08:58.360+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-03-24T12:08:58.377+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:08:58.376+0000] {dag.py:4180} INFO - Setting next_dagrun for tutorial_dag to None, run_after=None
+[2026-03-24T12:08:58.410+0000] {processor.py:208} INFO - Processing /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py took 0.091 seconds
+[2026-03-24T12:09:36.044+0000] {processor.py:186} INFO - Started process (PID=46453) to work on /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2026-03-24T12:09:36.048+0000] {processor.py:914} INFO - Processing file /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py for tasks to queue
+[2026-03-24T12:09:36.051+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:09:36.050+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2026-03-24T12:09:36.060+0000] {processor.py:925} INFO - DAG(s) 'tutorial_dag' retrieved from /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2026-03-24T12:09:36.082+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:09:36.082+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-03-24T12:09:36.096+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:09:36.096+0000] {dag.py:4180} INFO - Setting next_dagrun for tutorial_dag to None, run_after=None
+[2026-03-24T12:09:36.122+0000] {processor.py:208} INFO - Processing /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py took 0.083 seconds
+[2026-03-24T12:10:34.741+0000] {processor.py:186} INFO - Started process (PID=46748) to work on /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2026-03-24T12:10:34.744+0000] {processor.py:914} INFO - Processing file /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py for tasks to queue
+[2026-03-24T12:10:34.746+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:10:34.746+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2026-03-24T12:10:34.757+0000] {processor.py:925} INFO - DAG(s) 'tutorial_dag' retrieved from /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py
+[2026-03-24T12:10:34.779+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:10:34.778+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-03-24T12:10:34.796+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:10:34.795+0000] {dag.py:4180} INFO - Setting next_dagrun for tutorial_dag to None, run_after=None
+[2026-03-24T12:10:34.837+0000] {processor.py:208} INFO - Processing /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/airflow/example_dags/tutorial_dag.py took 0.104 seconds

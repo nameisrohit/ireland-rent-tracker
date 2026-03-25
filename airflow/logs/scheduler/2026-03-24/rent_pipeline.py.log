@@ -1,0 +1,254 @@
+[2026-03-24T12:03:08.895+0000] {processor.py:186} INFO - Started process (PID=45118) to work on /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py
+[2026-03-24T12:03:08.896+0000] {processor.py:914} INFO - Processing file /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py for tasks to queue
+[2026-03-24T12:03:08.898+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:03:08.898+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py
+[2026-03-24T12:03:08.917+0000] {processor.py:925} INFO - DAG(s) 'ireland_rent_pipeline' retrieved from /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py
+[2026-03-24T12:03:09.041+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:03:09.040+0000] {override.py:1930} INFO - Created Permission View: can read on DAG:ireland_rent_pipeline
+[2026-03-24T12:03:09.056+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:03:09.055+0000] {override.py:1930} INFO - Created Permission View: can delete on DAG:ireland_rent_pipeline
+[2026-03-24T12:03:09.068+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:03:09.067+0000] {override.py:1930} INFO - Created Permission View: can edit on DAG:ireland_rent_pipeline
+[2026-03-24T12:03:09.086+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:03:09.085+0000] {override.py:1930} INFO - Created Permission View: can read on DAG Run:ireland_rent_pipeline
+[2026-03-24T12:03:09.097+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:03:09.097+0000] {override.py:1930} INFO - Created Permission View: can delete on DAG Run:ireland_rent_pipeline
+[2026-03-24T12:03:09.107+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:03:09.107+0000] {override.py:1930} INFO - Created Permission View: can create on DAG Run:ireland_rent_pipeline
+[2026-03-24T12:03:09.117+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:03:09.117+0000] {override.py:1930} INFO - Created Permission View: menu access on DAG Run:ireland_rent_pipeline
+[2026-03-24T12:03:09.117+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:03:09.117+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-03-24T12:03:09.130+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:03:09.130+0000] {dag.py:3262} INFO - Creating ORM DAG for ireland_rent_pipeline
+[2026-03-24T12:03:09.141+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:03:09.141+0000] {dag.py:4180} INFO - Setting next_dagrun for ireland_rent_pipeline to 2026-03-23 06:00:00+00:00, run_after=2026-03-24 06:00:00+00:00
+[2026-03-24T12:03:09.162+0000] {processor.py:208} INFO - Processing /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py took 0.274 seconds
+[2026-03-24T12:05:10.127+0000] {processor.py:186} INFO - Started process (PID=45458) to work on /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py
+[2026-03-24T12:05:10.129+0000] {processor.py:914} INFO - Processing file /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py for tasks to queue
+[2026-03-24T12:05:10.132+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:05:10.131+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py
+[2026-03-24T12:05:10.147+0000] {processor.py:925} INFO - DAG(s) 'ireland_rent_pipeline' retrieved from /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py
+[2026-03-24T12:05:10.176+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:05:10.176+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-03-24T12:05:10.203+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:05:10.203+0000] {dag.py:4180} INFO - Setting next_dagrun for ireland_rent_pipeline to 2026-03-23 06:00:00+00:00, run_after=2026-03-24 06:00:00+00:00
+[2026-03-24T12:05:10.229+0000] {processor.py:208} INFO - Processing /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py took 0.108 seconds
+[2026-03-24T12:06:19.070+0000] {processor.py:186} INFO - Started process (PID=45669) to work on /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py
+[2026-03-24T12:06:19.071+0000] {processor.py:914} INFO - Processing file /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py for tasks to queue
+[2026-03-24T12:06:19.074+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:06:19.073+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py
+[2026-03-24T12:06:19.085+0000] {processor.py:925} INFO - DAG(s) 'ireland_rent_pipeline' retrieved from /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py
+[2026-03-24T12:06:19.102+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:06:19.101+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-03-24T12:06:19.126+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:06:19.126+0000] {dag.py:4180} INFO - Setting next_dagrun for ireland_rent_pipeline to 2026-03-23 06:00:00+00:00, run_after=2026-03-24 06:00:00+00:00
+[2026-03-24T12:06:19.162+0000] {processor.py:208} INFO - Processing /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py took 0.097 seconds
+[2026-03-24T12:06:52.214+0000] {processor.py:186} INFO - Started process (PID=45715) to work on /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py
+[2026-03-24T12:06:52.215+0000] {processor.py:914} INFO - Processing file /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py for tasks to queue
+[2026-03-24T12:06:52.217+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:06:52.217+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py
+[2026-03-24T12:06:52.232+0000] {processor.py:925} INFO - DAG(s) 'ireland_rent_pipeline' retrieved from /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py
+[2026-03-24T12:06:52.253+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:06:52.253+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-03-24T12:06:52.285+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:06:52.284+0000] {dag.py:4180} INFO - Setting next_dagrun for ireland_rent_pipeline to 2026-03-23 06:00:00+00:00, run_after=2026-03-24 06:00:00+00:00
+[2026-03-24T12:06:52.309+0000] {processor.py:208} INFO - Processing /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py took 0.100 seconds
+[2026-03-24T12:07:44.125+0000] {processor.py:186} INFO - Started process (PID=45908) to work on /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py
+[2026-03-24T12:07:44.129+0000] {processor.py:914} INFO - Processing file /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py for tasks to queue
+[2026-03-24T12:07:44.133+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:07:44.132+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py
+[2026-03-24T12:07:44.146+0000] {processor.py:925} INFO - DAG(s) 'ireland_rent_pipeline' retrieved from /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py
+[2026-03-24T12:07:44.170+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:07:44.169+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-03-24T12:07:44.194+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:07:44.194+0000] {dag.py:4180} INFO - Setting next_dagrun for ireland_rent_pipeline to 2026-03-23 06:00:00+00:00, run_after=2026-03-24 06:00:00+00:00
+[2026-03-24T12:07:44.223+0000] {processor.py:208} INFO - Processing /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py took 0.105 seconds
+[2026-03-24T12:08:51.648+0000] {processor.py:186} INFO - Started process (PID=46272) to work on /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py
+[2026-03-24T12:08:51.650+0000] {processor.py:914} INFO - Processing file /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py for tasks to queue
+[2026-03-24T12:08:51.653+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:08:51.652+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py
+[2026-03-24T12:08:51.664+0000] {processor.py:925} INFO - DAG(s) 'ireland_rent_pipeline' retrieved from /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py
+[2026-03-24T12:08:51.764+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:08:51.764+0000] {override.py:1930} INFO - Created Permission View: can delete on DAG:ireland_rent_pipeline
+[2026-03-24T12:08:51.778+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:08:51.778+0000] {override.py:1930} INFO - Created Permission View: can edit on DAG:ireland_rent_pipeline
+[2026-03-24T12:08:51.788+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:08:51.787+0000] {override.py:1930} INFO - Created Permission View: can read on DAG:ireland_rent_pipeline
+[2026-03-24T12:08:51.803+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:08:51.802+0000] {override.py:1930} INFO - Created Permission View: can delete on DAG Run:ireland_rent_pipeline
+[2026-03-24T12:08:51.811+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:08:51.811+0000] {override.py:1930} INFO - Created Permission View: can create on DAG Run:ireland_rent_pipeline
+[2026-03-24T12:08:51.820+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:08:51.820+0000] {override.py:1930} INFO - Created Permission View: can read on DAG Run:ireland_rent_pipeline
+[2026-03-24T12:08:51.831+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:08:51.831+0000] {override.py:1930} INFO - Created Permission View: menu access on DAG Run:ireland_rent_pipeline
+[2026-03-24T12:08:51.831+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:08:51.831+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-03-24T12:08:51.843+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:08:51.843+0000] {dag.py:3262} INFO - Creating ORM DAG for ireland_rent_pipeline
+[2026-03-24T12:08:51.853+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:08:51.853+0000] {dag.py:4180} INFO - Setting next_dagrun for ireland_rent_pipeline to 2026-03-23 06:00:00+00:00, run_after=2026-03-24 06:00:00+00:00
+[2026-03-24T12:08:51.875+0000] {processor.py:208} INFO - Processing /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py took 0.233 seconds
+[2026-03-24T12:09:31.744+0000] {processor.py:186} INFO - Started process (PID=46443) to work on /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py
+[2026-03-24T12:09:31.749+0000] {processor.py:914} INFO - Processing file /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py for tasks to queue
+[2026-03-24T12:09:31.752+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:09:31.751+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py
+[2026-03-24T12:09:31.764+0000] {processor.py:925} INFO - DAG(s) 'ireland_rent_pipeline' retrieved from /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py
+[2026-03-24T12:09:31.785+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:09:31.784+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-03-24T12:09:31.814+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:09:31.814+0000] {dag.py:4180} INFO - Setting next_dagrun for ireland_rent_pipeline to 2026-03-23 06:00:00+00:00, run_after=2026-03-24 06:00:00+00:00
+[2026-03-24T12:09:31.842+0000] {processor.py:208} INFO - Processing /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py took 0.104 seconds
+[2026-03-24T12:10:02.642+0000] {processor.py:186} INFO - Started process (PID=46690) to work on /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py
+[2026-03-24T12:10:02.644+0000] {processor.py:914} INFO - Processing file /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py for tasks to queue
+[2026-03-24T12:10:02.646+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:10:02.646+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py
+[2026-03-24T12:10:02.658+0000] {processor.py:925} INFO - DAG(s) 'ireland_rent_pipeline' retrieved from /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py
+[2026-03-24T12:10:02.677+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:10:02.677+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-03-24T12:10:02.698+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:10:02.698+0000] {dag.py:4180} INFO - Setting next_dagrun for ireland_rent_pipeline to 2026-03-23 06:00:00+00:00, run_after=2026-03-24 06:00:00+00:00
+[2026-03-24T12:10:02.724+0000] {processor.py:208} INFO - Processing /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py took 0.087 seconds
+[2026-03-24T12:10:32.505+0000] {processor.py:186} INFO - Started process (PID=46741) to work on /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py
+[2026-03-24T12:10:32.507+0000] {processor.py:914} INFO - Processing file /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py for tasks to queue
+[2026-03-24T12:10:32.509+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:10:32.508+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py
+[2026-03-24T12:10:32.521+0000] {processor.py:925} INFO - DAG(s) 'ireland_rent_pipeline' retrieved from /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py
+[2026-03-24T12:10:32.538+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:10:32.538+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-03-24T12:10:32.557+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:10:32.556+0000] {dag.py:4180} INFO - Setting next_dagrun for ireland_rent_pipeline to 2026-03-23 06:00:00+00:00, run_after=2026-03-24 06:00:00+00:00
+[2026-03-24T12:10:32.581+0000] {processor.py:208} INFO - Processing /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py took 0.081 seconds
+[2026-03-24T12:12:50.224+0000] {processor.py:186} INFO - Started process (PID=47265) to work on /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py
+[2026-03-24T12:12:50.225+0000] {processor.py:914} INFO - Processing file /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py for tasks to queue
+[2026-03-24T12:12:50.226+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:12:50.226+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py
+[2026-03-24T12:12:50.241+0000] {processor.py:925} INFO - DAG(s) 'ireland_rent_pipeline' retrieved from /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py
+[2026-03-24T12:12:50.267+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:12:50.266+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-03-24T12:12:50.289+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:12:50.289+0000] {dag.py:4180} INFO - Setting next_dagrun for ireland_rent_pipeline to 2026-03-23 06:00:00+00:00, run_after=2026-03-24 06:00:00+00:00
+[2026-03-24T12:12:50.310+0000] {processor.py:208} INFO - Processing /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py took 0.093 seconds
+[2026-03-24T12:13:20.744+0000] {processor.py:186} INFO - Started process (PID=47340) to work on /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py
+[2026-03-24T12:13:20.747+0000] {processor.py:914} INFO - Processing file /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py for tasks to queue
+[2026-03-24T12:13:20.748+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:13:20.748+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py
+[2026-03-24T12:13:20.762+0000] {processor.py:925} INFO - DAG(s) 'ireland_rent_pipeline' retrieved from /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py
+[2026-03-24T12:13:20.786+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:13:20.786+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-03-24T12:13:20.807+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:13:20.807+0000] {dag.py:4180} INFO - Setting next_dagrun for ireland_rent_pipeline to 2026-03-23 06:00:00+00:00, run_after=2026-03-24 06:00:00+00:00
+[2026-03-24T12:13:20.832+0000] {processor.py:208} INFO - Processing /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py took 0.093 seconds
+[2026-03-24T12:13:51.562+0000] {processor.py:186} INFO - Started process (PID=47378) to work on /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py
+[2026-03-24T12:13:51.566+0000] {processor.py:914} INFO - Processing file /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py for tasks to queue
+[2026-03-24T12:13:51.567+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:13:51.567+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py
+[2026-03-24T12:13:51.581+0000] {processor.py:925} INFO - DAG(s) 'ireland_rent_pipeline' retrieved from /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py
+[2026-03-24T12:13:51.605+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:13:51.605+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-03-24T12:13:51.625+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:13:51.625+0000] {dag.py:4180} INFO - Setting next_dagrun for ireland_rent_pipeline to 2026-03-23 06:00:00+00:00, run_after=2026-03-24 06:00:00+00:00
+[2026-03-24T12:13:51.649+0000] {processor.py:208} INFO - Processing /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py took 0.093 seconds
+[2026-03-24T12:14:22.067+0000] {processor.py:186} INFO - Started process (PID=47419) to work on /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py
+[2026-03-24T12:14:22.069+0000] {processor.py:914} INFO - Processing file /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py for tasks to queue
+[2026-03-24T12:14:22.071+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:14:22.071+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py
+[2026-03-24T12:14:22.087+0000] {processor.py:925} INFO - DAG(s) 'ireland_rent_pipeline' retrieved from /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py
+[2026-03-24T12:14:22.112+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:14:22.112+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-03-24T12:14:22.134+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:14:22.134+0000] {dag.py:4180} INFO - Setting next_dagrun for ireland_rent_pipeline to 2026-03-23 06:00:00+00:00, run_after=2026-03-24 06:00:00+00:00
+[2026-03-24T12:14:22.171+0000] {processor.py:208} INFO - Processing /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py took 0.110 seconds
+[2026-03-24T12:14:52.533+0000] {processor.py:186} INFO - Started process (PID=47456) to work on /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py
+[2026-03-24T12:14:52.538+0000] {processor.py:914} INFO - Processing file /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py for tasks to queue
+[2026-03-24T12:14:52.539+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:14:52.539+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py
+[2026-03-24T12:14:52.557+0000] {processor.py:925} INFO - DAG(s) 'ireland_rent_pipeline' retrieved from /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py
+[2026-03-24T12:14:52.584+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:14:52.583+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-03-24T12:14:52.604+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:14:52.604+0000] {dag.py:4180} INFO - Setting next_dagrun for ireland_rent_pipeline to 2026-03-23 06:00:00+00:00, run_after=2026-03-24 06:00:00+00:00
+[2026-03-24T12:14:52.640+0000] {processor.py:208} INFO - Processing /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py took 0.112 seconds
+[2026-03-24T12:15:22.831+0000] {processor.py:186} INFO - Started process (PID=47499) to work on /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py
+[2026-03-24T12:15:22.832+0000] {processor.py:914} INFO - Processing file /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py for tasks to queue
+[2026-03-24T12:15:22.833+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:15:22.833+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py
+[2026-03-24T12:15:22.845+0000] {processor.py:925} INFO - DAG(s) 'ireland_rent_pipeline' retrieved from /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py
+[2026-03-24T12:15:22.869+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:15:22.869+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-03-24T12:15:22.889+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:15:22.889+0000] {dag.py:4180} INFO - Setting next_dagrun for ireland_rent_pipeline to 2026-03-23 06:00:00+00:00, run_after=2026-03-24 06:00:00+00:00
+[2026-03-24T12:15:22.913+0000] {processor.py:208} INFO - Processing /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py took 0.087 seconds
+[2026-03-24T12:15:53.578+0000] {processor.py:186} INFO - Started process (PID=47530) to work on /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py
+[2026-03-24T12:15:53.582+0000] {processor.py:914} INFO - Processing file /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py for tasks to queue
+[2026-03-24T12:15:53.583+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:15:53.583+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py
+[2026-03-24T12:15:53.596+0000] {processor.py:925} INFO - DAG(s) 'ireland_rent_pipeline' retrieved from /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py
+[2026-03-24T12:15:53.619+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:15:53.619+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-03-24T12:15:53.639+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:15:53.638+0000] {dag.py:4180} INFO - Setting next_dagrun for ireland_rent_pipeline to 2026-03-23 06:00:00+00:00, run_after=2026-03-24 06:00:00+00:00
+[2026-03-24T12:15:53.778+0000] {processor.py:208} INFO - Processing /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py took 0.205 seconds
+[2026-03-24T12:16:24.066+0000] {processor.py:186} INFO - Started process (PID=47571) to work on /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py
+[2026-03-24T12:16:24.068+0000] {processor.py:914} INFO - Processing file /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py for tasks to queue
+[2026-03-24T12:16:24.069+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:16:24.069+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py
+[2026-03-24T12:16:24.083+0000] {processor.py:925} INFO - DAG(s) 'ireland_rent_pipeline' retrieved from /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py
+[2026-03-24T12:16:24.108+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:16:24.107+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-03-24T12:16:24.247+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:16:24.247+0000] {dag.py:4180} INFO - Setting next_dagrun for ireland_rent_pipeline to 2026-03-23 06:00:00+00:00, run_after=2026-03-24 06:00:00+00:00
+[2026-03-24T12:16:24.269+0000] {processor.py:208} INFO - Processing /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py took 0.208 seconds
+[2026-03-24T12:16:54.370+0000] {processor.py:186} INFO - Started process (PID=47606) to work on /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py
+[2026-03-24T12:16:54.374+0000] {processor.py:914} INFO - Processing file /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py for tasks to queue
+[2026-03-24T12:16:54.375+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:16:54.375+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py
+[2026-03-24T12:16:54.389+0000] {processor.py:925} INFO - DAG(s) 'ireland_rent_pipeline' retrieved from /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py
+[2026-03-24T12:16:54.412+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:16:54.411+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-03-24T12:16:54.558+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:16:54.558+0000] {dag.py:4180} INFO - Setting next_dagrun for ireland_rent_pipeline to 2026-03-23 06:00:00+00:00, run_after=2026-03-24 06:00:00+00:00
+[2026-03-24T12:16:54.579+0000] {processor.py:208} INFO - Processing /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py took 0.214 seconds
+[2026-03-24T12:17:24.942+0000] {processor.py:186} INFO - Started process (PID=47650) to work on /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py
+[2026-03-24T12:17:24.947+0000] {processor.py:914} INFO - Processing file /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py for tasks to queue
+[2026-03-24T12:17:24.948+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:17:24.948+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py
+[2026-03-24T12:17:24.966+0000] {processor.py:925} INFO - DAG(s) 'ireland_rent_pipeline' retrieved from /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py
+[2026-03-24T12:17:24.993+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:17:24.993+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-03-24T12:17:25.138+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:17:25.138+0000] {dag.py:4180} INFO - Setting next_dagrun for ireland_rent_pipeline to 2026-03-23 06:00:00+00:00, run_after=2026-03-24 06:00:00+00:00
+[2026-03-24T12:17:25.160+0000] {processor.py:208} INFO - Processing /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py took 0.223 seconds
+[2026-03-24T12:17:56.299+0000] {processor.py:186} INFO - Started process (PID=47712) to work on /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py
+[2026-03-24T12:17:56.303+0000] {processor.py:914} INFO - Processing file /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py for tasks to queue
+[2026-03-24T12:17:56.305+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:17:56.304+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py
+[2026-03-24T12:17:56.324+0000] {processor.py:925} INFO - DAG(s) 'ireland_rent_pipeline' retrieved from /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py
+[2026-03-24T12:17:56.529+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:17:56.529+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-03-24T12:17:56.552+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:17:56.552+0000] {dag.py:4180} INFO - Setting next_dagrun for ireland_rent_pipeline to 2026-03-23 06:00:00+00:00, run_after=2026-03-24 06:00:00+00:00
+[2026-03-24T12:17:56.578+0000] {processor.py:208} INFO - Processing /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py took 0.286 seconds
+[2026-03-24T12:18:26.901+0000] {processor.py:186} INFO - Started process (PID=47769) to work on /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py
+[2026-03-24T12:18:26.903+0000] {processor.py:914} INFO - Processing file /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py for tasks to queue
+[2026-03-24T12:18:26.904+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:18:26.904+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py
+[2026-03-24T12:18:26.919+0000] {processor.py:925} INFO - DAG(s) 'ireland_rent_pipeline' retrieved from /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py
+[2026-03-24T12:18:26.947+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:18:26.947+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-03-24T12:18:26.972+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:18:26.972+0000] {dag.py:4180} INFO - Setting next_dagrun for ireland_rent_pipeline to 2026-03-23 06:00:00+00:00, run_after=2026-03-24 06:00:00+00:00
+[2026-03-24T12:18:26.997+0000] {processor.py:208} INFO - Processing /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py took 0.103 seconds
+[2026-03-24T12:18:57.577+0000] {processor.py:186} INFO - Started process (PID=47777) to work on /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py
+[2026-03-24T12:18:57.582+0000] {processor.py:914} INFO - Processing file /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py for tasks to queue
+[2026-03-24T12:18:57.584+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:18:57.583+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py
+[2026-03-24T12:18:57.604+0000] {processor.py:925} INFO - DAG(s) 'ireland_rent_pipeline' retrieved from /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py
+[2026-03-24T12:18:57.641+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:18:57.641+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-03-24T12:18:57.674+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:18:57.674+0000] {dag.py:4180} INFO - Setting next_dagrun for ireland_rent_pipeline to 2026-03-23 06:00:00+00:00, run_after=2026-03-24 06:00:00+00:00
+[2026-03-24T12:18:57.698+0000] {processor.py:208} INFO - Processing /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py took 0.131 seconds
+[2026-03-24T12:19:28.775+0000] {processor.py:186} INFO - Started process (PID=47841) to work on /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py
+[2026-03-24T12:19:28.780+0000] {processor.py:914} INFO - Processing file /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py for tasks to queue
+[2026-03-24T12:19:28.782+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:19:28.781+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py
+[2026-03-24T12:19:28.796+0000] {processor.py:925} INFO - DAG(s) 'ireland_rent_pipeline' retrieved from /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py
+[2026-03-24T12:19:28.821+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:19:28.820+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-03-24T12:19:28.847+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:19:28.847+0000] {dag.py:4180} INFO - Setting next_dagrun for ireland_rent_pipeline to 2026-03-23 06:00:00+00:00, run_after=2026-03-24 06:00:00+00:00
+[2026-03-24T12:19:28.872+0000] {processor.py:208} INFO - Processing /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py took 0.103 seconds
+[2026-03-24T12:19:59.360+0000] {processor.py:186} INFO - Started process (PID=47884) to work on /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py
+[2026-03-24T12:19:59.365+0000] {processor.py:914} INFO - Processing file /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py for tasks to queue
+[2026-03-24T12:19:59.366+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:19:59.366+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py
+[2026-03-24T12:19:59.378+0000] {processor.py:925} INFO - DAG(s) 'ireland_rent_pipeline' retrieved from /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py
+[2026-03-24T12:19:59.403+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:19:59.403+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-03-24T12:19:59.426+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:19:59.426+0000] {dag.py:4180} INFO - Setting next_dagrun for ireland_rent_pipeline to 2026-03-23 06:00:00+00:00, run_after=2026-03-24 06:00:00+00:00
+[2026-03-24T12:19:59.450+0000] {processor.py:208} INFO - Processing /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py took 0.095 seconds
+[2026-03-24T12:20:30.499+0000] {processor.py:186} INFO - Started process (PID=47899) to work on /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py
+[2026-03-24T12:20:30.504+0000] {processor.py:914} INFO - Processing file /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py for tasks to queue
+[2026-03-24T12:20:30.509+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:20:30.509+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py
+[2026-03-24T12:20:30.537+0000] {processor.py:925} INFO - DAG(s) 'ireland_rent_pipeline' retrieved from /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py
+[2026-03-24T12:20:30.574+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:20:30.573+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-03-24T12:20:30.602+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:20:30.602+0000] {dag.py:4180} INFO - Setting next_dagrun for ireland_rent_pipeline to 2026-03-23 06:00:00+00:00, run_after=2026-03-24 06:00:00+00:00
+[2026-03-24T12:20:30.627+0000] {processor.py:208} INFO - Processing /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py took 0.137 seconds
+[2026-03-24T12:29:44.137+0000] {processor.py:186} INFO - Started process (PID=47927) to work on /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py
+[2026-03-24T12:29:44.138+0000] {processor.py:914} INFO - Processing file /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py for tasks to queue
+[2026-03-24T12:29:44.140+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:29:44.140+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py
+[2026-03-24T12:29:44.159+0000] {processor.py:925} INFO - DAG(s) 'ireland_rent_pipeline' retrieved from /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py
+[2026-03-24T12:29:44.186+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:29:44.186+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-03-24T12:29:44.209+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:29:44.209+0000] {dag.py:4180} INFO - Setting next_dagrun for ireland_rent_pipeline to 2026-03-23 06:00:00+00:00, run_after=2026-03-24 06:00:00+00:00
+[2026-03-24T12:29:44.231+0000] {processor.py:208} INFO - Processing /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py took 0.104 seconds
+[2026-03-24T12:30:14.622+0000] {processor.py:186} INFO - Started process (PID=47971) to work on /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py
+[2026-03-24T12:30:14.624+0000] {processor.py:914} INFO - Processing file /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py for tasks to queue
+[2026-03-24T12:30:14.625+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:30:14.625+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py
+[2026-03-24T12:30:14.637+0000] {processor.py:925} INFO - DAG(s) 'ireland_rent_pipeline' retrieved from /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py
+[2026-03-24T12:30:14.658+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:30:14.658+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-03-24T12:30:14.678+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:30:14.677+0000] {dag.py:4180} INFO - Setting next_dagrun for ireland_rent_pipeline to 2026-03-23 06:00:00+00:00, run_after=2026-03-24 06:00:00+00:00
+[2026-03-24T12:30:14.701+0000] {processor.py:208} INFO - Processing /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py took 0.084 seconds
+[2026-03-24T12:30:45.649+0000] {processor.py:186} INFO - Started process (PID=47984) to work on /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py
+[2026-03-24T12:30:45.650+0000] {processor.py:914} INFO - Processing file /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py for tasks to queue
+[2026-03-24T12:30:45.652+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:30:45.651+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py
+[2026-03-24T12:30:45.663+0000] {processor.py:925} INFO - DAG(s) 'ireland_rent_pipeline' retrieved from /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py
+[2026-03-24T12:30:45.685+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:30:45.685+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-03-24T12:30:45.706+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:30:45.706+0000] {dag.py:4180} INFO - Setting next_dagrun for ireland_rent_pipeline to 2026-03-23 06:00:00+00:00, run_after=2026-03-24 06:00:00+00:00
+[2026-03-24T12:30:45.730+0000] {processor.py:208} INFO - Processing /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py took 0.086 seconds
+[2026-03-24T12:31:16.212+0000] {processor.py:186} INFO - Started process (PID=47999) to work on /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py
+[2026-03-24T12:31:16.216+0000] {processor.py:914} INFO - Processing file /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py for tasks to queue
+[2026-03-24T12:31:16.218+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:31:16.217+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py
+[2026-03-24T12:31:16.231+0000] {processor.py:925} INFO - DAG(s) 'ireland_rent_pipeline' retrieved from /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py
+[2026-03-24T12:31:16.258+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:31:16.258+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-03-24T12:31:16.280+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:31:16.280+0000] {dag.py:4180} INFO - Setting next_dagrun for ireland_rent_pipeline to 2026-03-23 06:00:00+00:00, run_after=2026-03-24 06:00:00+00:00
+[2026-03-24T12:31:16.307+0000] {processor.py:208} INFO - Processing /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py took 0.100 seconds
+[2026-03-24T12:31:47.103+0000] {processor.py:186} INFO - Started process (PID=48033) to work on /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py
+[2026-03-24T12:31:47.105+0000] {processor.py:914} INFO - Processing file /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py for tasks to queue
+[2026-03-24T12:31:47.107+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:31:47.106+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py
+[2026-03-24T12:31:47.120+0000] {processor.py:925} INFO - DAG(s) 'ireland_rent_pipeline' retrieved from /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py
+[2026-03-24T12:31:47.144+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:31:47.144+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-03-24T12:31:47.165+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:31:47.165+0000] {dag.py:4180} INFO - Setting next_dagrun for ireland_rent_pipeline to 2026-03-23 06:00:00+00:00, run_after=2026-03-24 06:00:00+00:00
+[2026-03-24T12:31:47.190+0000] {processor.py:208} INFO - Processing /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py took 0.092 seconds
+[2026-03-24T12:32:17.733+0000] {processor.py:186} INFO - Started process (PID=48040) to work on /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py
+[2026-03-24T12:32:17.734+0000] {processor.py:914} INFO - Processing file /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py for tasks to queue
+[2026-03-24T12:32:17.735+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:32:17.735+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py
+[2026-03-24T12:32:17.747+0000] {processor.py:925} INFO - DAG(s) 'ireland_rent_pipeline' retrieved from /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py
+[2026-03-24T12:32:17.770+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:32:17.770+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-03-24T12:32:17.791+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:32:17.791+0000] {dag.py:4180} INFO - Setting next_dagrun for ireland_rent_pipeline to 2026-03-23 06:00:00+00:00, run_after=2026-03-24 06:00:00+00:00
+[2026-03-24T12:32:17.816+0000] {processor.py:208} INFO - Processing /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py took 0.088 seconds
+[2026-03-24T12:32:48.467+0000] {processor.py:186} INFO - Started process (PID=48059) to work on /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py
+[2026-03-24T12:32:48.478+0000] {processor.py:914} INFO - Processing file /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py for tasks to queue
+[2026-03-24T12:32:48.479+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:32:48.479+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py
+[2026-03-24T12:32:48.491+0000] {processor.py:925} INFO - DAG(s) 'ireland_rent_pipeline' retrieved from /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py
+[2026-03-24T12:32:48.513+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:32:48.512+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-03-24T12:32:48.534+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:32:48.533+0000] {dag.py:4180} INFO - Setting next_dagrun for ireland_rent_pipeline to 2026-03-23 06:00:00+00:00, run_after=2026-03-24 06:00:00+00:00
+[2026-03-24T12:32:48.565+0000] {processor.py:208} INFO - Processing /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py took 0.103 seconds
+[2026-03-24T12:56:24.864+0000] {processor.py:186} INFO - Started process (PID=48081) to work on /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py
+[2026-03-24T12:56:24.866+0000] {processor.py:914} INFO - Processing file /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py for tasks to queue
+[2026-03-24T12:56:24.868+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:56:24.867+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py
+[2026-03-24T12:56:24.881+0000] {processor.py:925} INFO - DAG(s) 'ireland_rent_pipeline' retrieved from /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py
+[2026-03-24T12:56:24.902+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:56:24.902+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-03-24T12:56:24.926+0000] {logging_mixin.py:190} INFO - [2026-03-24T12:56:24.925+0000] {dag.py:4180} INFO - Setting next_dagrun for ireland_rent_pipeline to 2026-03-23 06:00:00+00:00, run_after=2026-03-24 06:00:00+00:00
+[2026-03-24T12:56:24.952+0000] {processor.py:208} INFO - Processing /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py took 0.097 seconds
+[2026-03-24T21:31:53.469+0000] {processor.py:186} INFO - Started process (PID=48112) to work on /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py
+[2026-03-24T21:31:53.572+0000] {processor.py:914} INFO - Processing file /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py for tasks to queue
+[2026-03-24T21:31:53.576+0000] {logging_mixin.py:190} INFO - [2026-03-24T21:31:53.575+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py
+[2026-03-24T21:31:53.628+0000] {processor.py:925} INFO - DAG(s) 'ireland_rent_pipeline' retrieved from /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py
+[2026-03-24T21:31:53.694+0000] {logging_mixin.py:190} INFO - [2026-03-24T21:31:53.693+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-03-24T21:31:53.725+0000] {logging_mixin.py:190} INFO - [2026-03-24T21:31:53.725+0000] {dag.py:4180} INFO - Setting next_dagrun for ireland_rent_pipeline to 2026-03-23 06:00:00+00:00, run_after=2026-03-24 06:00:00+00:00
+[2026-03-24T21:31:53.961+0000] {processor.py:208} INFO - Processing /home/rohit/ireland-rent-tracker/airflow/dags/rent_pipeline.py took 0.505 seconds
