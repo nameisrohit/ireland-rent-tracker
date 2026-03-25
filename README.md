@@ -87,7 +87,7 @@ ireland-rent-tracker/
 ### Installation
 ```bash
 # Clone the repo
-git clone https://github.com/YOUR_USERNAME/ireland-rent-tracker.git
+git clone https://github.com/nameisrohit/ireland-rent-tracker.git
 cd ireland-rent-tracker
 
 # Create virtual environment
