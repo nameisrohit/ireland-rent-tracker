@@ -511,13 +511,28 @@ def page_bedroom_analysis(bedrooms_df):
         counties = sorted(bedrooms_df['county'].unique())
         selected_county = st.selectbox("📍 Select County", counties)
 
+    # Only show specific bedroom counts
+    # Remove grouped categories like '1 to 2 bed'
+    specific_beds = ['One bed', 'Two bed', 'Three bed', 'Four plus bed']
+
     year_county = bedrooms_df[
         (bedrooms_df['year'] == selected_year) &
-        (bedrooms_df['county'] == selected_county)
+        (bedrooms_df['county'] == selected_county) &
+        (bedrooms_df['bedrooms'].isin(specific_beds))
     ]
 
     if not year_county.empty:
         section_header(f"{selected_county} — {selected_year}")
+
+        # Sort bedrooms in logical order
+        bedroom_order = ['One bed', 'Two bed', 'Three bed', 'Four plus bed']
+        year_county = year_county.copy()
+        year_county['sort_key'] = year_county['bedrooms'].apply(
+            lambda x: bedroom_order.index(x)
+            if x in bedroom_order else 99
+        )
+        year_county = year_county.sort_values('sort_key')
+
         fig2 = px.bar(
             year_county, x='bedrooms', y='avg_monthly_rent',
             color='avg_monthly_rent',
