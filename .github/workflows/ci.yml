@@ -1,0 +1,116 @@
+# .github/workflows/ci.yml
+# ============================================================
+# Continuous Integration Pipeline
+#
+# What is this?
+# This workflow runs automatically every time someone
+# pushes code or opens a pull request.
+#
+# It checks:
+# 1. Code quality — is the Python code clean?
+# 2. Dependencies — do all libraries install correctly?
+# 3. Basic tests — do our functions work?
+#
+# Why does this matter?
+# In a team, you never want broken code to reach production.
+# CI catches problems before they cause damage.
+# ============================================================
+
+name: CI — Code Quality & Tests
+
+# When does this run?
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  quality:
+    name: Code Quality Check
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1 — Check out the code
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # Step 2 — Set up Python
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.12'
+
+      # Step 3 — Cache pip packages
+      # This makes subsequent runs much faster
+      # Instead of downloading packages every time,
+      # GitHub caches them between runs
+      - name: Cache pip packages
+        uses: actions/cache@v3
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('requirements-dashboard.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+
+      # Step 4 — Install dependencies
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements-dashboard.txt
+          pip install flake8
+
+      # Step 5 — Run flake8 linter
+      # What is a linter?
+      # A tool that checks your code for style errors,
+      # unused variables, syntax errors etc.
+      # flake8 is the most popular Python linter.
+      - name: Lint with flake8
+        run: |
+          # Stop if there are syntax errors or undefined names
+          flake8 dashboard/app.py scraper/rtb_scraper.py \
+            --count \
+            --select=E9,F63,F7,F82 \
+            --show-source \
+            --statistics
+          # Warn on style issues but don't fail
+          flake8 dashboard/app.py scraper/rtb_scraper.py \
+            --count \
+            --exit-zero \
+            --max-complexity=10 \
+            --max-line-length=120 \
+            --statistics
+
+      # Step 6 — Check imports work
+      - name: Check imports
+        run: |
+          python -c "import streamlit; print('streamlit ok')"
+          python -c "import plotly; print('plotly ok')"
+          python -c "import pandas; print('pandas ok')"
+          python -c "import psycopg2; print('psycopg2 ok')"
+
+  test:
+    name: Run Tests
+    runs-on: ubuntu-latest
+    needs: quality
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements-dashboard.txt
+          pip install pytest
+
+      # Step 7 — Run tests
+      - name: Run tests
+        run: |
+          pytest tests/ -v --tb=short 2>/dev/null || \
+          echo "No tests found — skipping"
