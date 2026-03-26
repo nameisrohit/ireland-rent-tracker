@@ -38,3 +38,4 @@ airflow/__pycache__/
 # Gunicorn
 gunicorn.ctl
 logs/gunicorn.ctl
+logs/
