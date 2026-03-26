@@ -31,4 +31,4 @@ dbt/logs/
 .vscode/
 
 # Tests
-*.test.py
+*.test.pygunicorn.ctl

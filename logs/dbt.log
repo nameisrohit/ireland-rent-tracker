@@ -1,0 +1,32 @@
+[0m09:22:29.077209 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75dc6ebb3620>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75dc6cb43860>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75dc6ecf6f60>]}
+
+
+============================== 09:22:29.081231 | e12a3e32-7937-4bd9-8c5a-6164a69b0cee ==============================
+[0m09:22:29.081231 [info ] [MainThread]: Running with dbt=1.11.7
+[0m09:22:29.082403 [debug] [MainThread]: running dbt with arguments {'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'use_colors': 'True', 'static_parser': 'True', 'profiles_dir': '/home/rohit/.dbt', 'partial_parse': 'True', 'empty': 'None', 'log_cache_events': 'False', 'log_path': 'logs', 'printer_width': '80', 'quiet': 'False', 'invocation_command': 'dbt init dbt', 'use_experimental_parser': 'False', 'fail_fast': 'False', 'no_print': 'None', 'log_format': 'default', 'target_path': 'None', 'cache_selected_only': 'False', 'send_anonymous_usage_stats': 'True', 'version_check': 'True', 'indirect_selection': 'eager', 'debug': 'False', 'write_json': 'True', 'warn_error': 'None', 'introspect': 'True'}
+[0m09:22:59.729201 [debug] [MainThread]: Starter project path: /home/rohit/ireland-rent-tracker/venv/lib/python3.12/site-packages/dbt/include/starter_project
+[0m09:22:59.732543 [info ] [MainThread]: 
+Your new dbt project "irekand_rent_tracker" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m09:22:59.733073 [info ] [MainThread]: Setting up your profile.
+[0m09:23:11.690374 [debug] [MainThread]: Redshift adapter: Setting redshift_connector to ERROR
+[0m09:23:11.691029 [debug] [MainThread]: Redshift adapter: Setting redshift_connector.core to ERROR
+[0m09:24:59.653872 [info ] [MainThread]: Profile irekand_rent_tracker written to /home/rohit/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m09:24:59.658756 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 160.84317, "process_in_blocks": "896", "process_kernel_time": 0.184224, "process_mem_max_rss": "117668", "process_out_blocks": "96", "process_user_time": 1.687494}
+[0m09:24:59.659887 [debug] [MainThread]: Command `dbt init` succeeded at 09:24:59.659726 after 160.84 seconds
+[0m09:24:59.660379 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75dc6dccd040>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75dc7026a2d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75dc6c4f6ba0>]}
+[0m09:24:59.660946 [debug] [MainThread]: Flushing usage events
+[0m09:25:00.279742 [debug] [MainThread]: An error was encountered while trying to flush usage events
