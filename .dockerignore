@@ -1,0 +1,34 @@
+# Virtual environment — container has its own Python
+venv/
+
+# Data files — too large, fetched from S3
+data/
+
+# Airflow files — not needed in dashboard container
+airflow/logs/
+airflow/airflow.db
+airflow/airflow.cfg
+airflow/webserver_config.py
+
+# Git files
+.git/
+.gitignore
+
+# Environment file — passed in at runtime
+.env
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# dbt artifacts
+dbt/target/
+dbt/dbt_packages/
+dbt/logs/
+
+# VS Code
+.vscode/
+
+# Tests
+*.test.py
