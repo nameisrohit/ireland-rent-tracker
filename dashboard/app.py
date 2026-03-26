@@ -153,20 +153,40 @@ YAXIS = dict(gridcolor='#1e2d20', linecolor='#2d5a3d', tickcolor='#2d5a3d')
 
 @st.cache_resource
 def get_connection():
-    return psycopg2.connect(
-        host=os.getenv("REDSHIFT_HOST"),
-        port=int(os.getenv("REDSHIFT_PORT", 5439)),
-        dbname=os.getenv("REDSHIFT_DB", "dev"),
-        user=os.getenv("REDSHIFT_USER"),
-        password=os.getenv("REDSHIFT_PASSWORD"),
-        sslmode="require",
-        connect_timeout=10
-    )
+    try:
+        conn = psycopg2.connect(
+            host=os.getenv("REDSHIFT_HOST"),
+            port=int(os.getenv("REDSHIFT_PORT", 5439)),
+            dbname=os.getenv("REDSHIFT_DB", "dev"),
+            user=os.getenv("REDSHIFT_USER"),
+            password=os.getenv("REDSHIFT_PASSWORD"),
+            sslmode="require",
+            connect_timeout=30,
+            keepalives=1,
+            keepalives_idle=30,
+            keepalives_interval=10,
+            keepalives_count=5
+        )
+        return conn
+    except Exception as e:
+        st.error(f"❌ Database error: {e}")
+        return None
 
 @st.cache_data(ttl=3600)
 def load_data(query):
     conn = get_connection()
-    return pd.read_sql(query, conn)
+    if conn is None:
+        return pd.DataFrame()
+    # If connection closed reconnect
+    try:
+        if conn.closed:
+            st.cache_resource.clear()
+            conn = get_connection()
+        return pd.read_sql(query, conn)
+    except Exception as e:
+        st.cache_resource.clear()
+        st.error(f"Query failed: {e}")
+        return pd.DataFrame()
 
 def load_all_data():
     national = load_data("""
