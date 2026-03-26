@@ -39,3 +39,4 @@ airflow/__pycache__/
 gunicorn.ctl
 logs/gunicorn.ctl
 logs/
+.terraform/
