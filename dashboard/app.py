@@ -22,8 +22,27 @@ st.set_page_config(
     page_title="Ireland Rent Tracker",
     page_icon="🏠",
     layout="wide",
-    initial_sidebar_state="expanded"
+    initial_sidebar_state="expanded",
 )
+
+# Add sidebar toggle button when sidebar is collapsed
+st.markdown("""
+<style>
+/* Always show the sidebar toggle arrow */
+[data-testid="collapsedControl"] {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    background: #00c851 !important;
+    border-radius: 0 8px 8px 0 !important;
+    color: white !important;
+}
+
+[data-testid="collapsedControl"]:hover {
+    background: #007e33 !important;
+}
+</style>
+""", unsafe_allow_html=True)
 
 # ============================================================
 # CSS + JS
