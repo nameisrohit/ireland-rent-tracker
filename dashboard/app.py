@@ -9,6 +9,15 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
+# Streamlit Cloud uses st.secrets instead of .env
+# This handles both local (.env) and cloud (st.secrets)
+import os
+for key in ['REDSHIFT_HOST', 'REDSHIFT_PORT', 'REDSHIFT_DB',
+            'REDSHIFT_USER', 'REDSHIFT_PASSWORD', 'REDSHIFT_SCHEMA',
+            'AWS_REGION', 'S3_BUCKET']:
+    if key not in os.environ and hasattr(st, 'secrets') and key in st.secrets:
+        os.environ[key] = str(st.secrets[key])
+
 st.set_page_config(
     page_title="Ireland Rent Tracker",
     page_icon="🏠",
