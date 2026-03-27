@@ -58,6 +58,9 @@ header {visibility: hidden;}
 
 [data-testid="stSidebar"] {
     background: var(--navy) !important;
+    width: 250px !important;
+    min-width: 250px !important;
+    max-width: 250px !important;
 }
 [data-testid="stSidebar"] * { color: #c8d0dc !important; }
 
