@@ -1,8 +1,4 @@
 # dashboard/app.py
-# Ireland Rent Tracker — Editorial Data Dashboard
-# Design: Financial Times / Irish Times inspired
-# Clean, trustworthy, data-forward
-
 import streamlit as st
 import plotly.express as px
 import plotly.graph_objects as go
@@ -13,7 +9,6 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-import os
 for key in ['REDSHIFT_HOST', 'REDSHIFT_PORT', 'REDSHIFT_DB',
             'REDSHIFT_USER', 'REDSHIFT_PASSWORD', 'REDSHIFT_SCHEMA',
             'AWS_REGION', 'S3_BUCKET']:
@@ -27,29 +22,25 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-# ============================================================
-# CSS — Editorial Design System
-# ============================================================
-
 st.markdown("""
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap');
 
 :root {
-    --navy:    #0d1b2a;
-    --ink:     #1a1a2e;
-    --amber:   #e8a020;
-    --red:     #c0392b;
-    --green:   #1a7a4a;
-    --paper:   #faf8f5;
-    --cream:   #f0ece4;
-    --border:  #d4cfc7;
-    --muted:   #7a7670;
-    --white:   #ffffff;
+    --navy:   #0d1b2a;
+    --amber:  #e8a020;
+    --red:    #c0392b;
+    --green:  #1a7a4a;
+    --paper:  #faf8f5;
+    --cream:  #f0ece4;
+    --border: #d4cfc7;
+    --muted:  #7a7670;
+    --ink:    #1a1a2e;
+    --white:  #ffffff;
 }
 
 html, body, [class*="css"] {
-    font-family: 'DM Sans', sans-serif;
+    font-family: 'DM Sans', sans-serif !important;
     background: var(--paper) !important;
     color: var(--ink) !important;
 }
@@ -58,35 +49,23 @@ html, body, [class*="css"] {
 footer {visibility: hidden;}
 header {visibility: hidden;}
 
-/* Hide sidebar collapse button */
-[data-testid="stSidebarCollapseButton"] {
-    display: none !important;
-}
+[data-testid="stSidebarCollapseButton"] { display: none !important; }
 
-/* Main background */
 .main .block-container {
-    background: var(--paper);
+    background: var(--paper) !important;
     padding: 2rem 3rem;
-    max-width: 1400px;
 }
 
-/* ── SIDEBAR ── */
 [data-testid="stSidebar"] {
     background: var(--navy) !important;
-    border-right: none;
-    padding: 0;
 }
-
-[data-testid="stSidebar"] * {
-    color: #c8d0dc !important;
-}
+[data-testid="stSidebar"] * { color: #c8d0dc !important; }
 
 .sidebar-logo {
     padding: 2rem 1.5rem 1rem;
     border-bottom: 1px solid rgba(255,255,255,0.1);
     margin-bottom: 1.5rem;
 }
-
 .sidebar-title {
     font-family: 'Playfair Display', serif;
     font-size: 1.3rem;
@@ -95,7 +74,6 @@ header {visibility: hidden;}
     line-height: 1.3;
     margin-top: 0.5rem;
 }
-
 .sidebar-subtitle {
     font-size: 0.75rem;
     color: var(--amber) !important;
@@ -103,28 +81,16 @@ header {visibility: hidden;}
     text-transform: uppercase;
     margin-top: 0.3rem;
 }
-
-.sidebar-nav-label {
-    font-size: 0.7rem;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    color: #5a6a7a !important;
-    padding: 0 1.5rem;
-    margin-bottom: 0.5rem;
-}
-
 .sidebar-stat {
     padding: 1rem 1.5rem;
     border-top: 1px solid rgba(255,255,255,0.07);
 }
-
 .sidebar-stat-value {
     font-family: 'DM Mono', monospace;
     font-size: 1.4rem;
     color: var(--amber) !important;
     font-weight: 500;
 }
-
 .sidebar-stat-label {
     font-size: 0.75rem;
     color: #5a6a7a !important;
@@ -132,25 +98,16 @@ header {visibility: hidden;}
     letter-spacing: 0.08em;
 }
 
-/* Radio buttons */
 [data-testid="stRadio"] label {
     font-size: 0.9rem !important;
-    color: #c8d0dc !important;
     padding: 6px 0 !important;
 }
 
-[data-testid="stRadio"] div[data-checked="true"] label {
-    color: #ffffff !important;
-    font-weight: 600 !important;
-}
-
-/* ── MASTHEAD ── */
 .masthead {
     border-bottom: 3px solid var(--navy);
     padding-bottom: 1rem;
     margin-bottom: 0.5rem;
 }
-
 .masthead-eyebrow {
     font-size: 0.7rem;
     letter-spacing: 0.15em;
@@ -158,7 +115,6 @@ header {visibility: hidden;}
     color: var(--muted);
     font-family: 'DM Mono', monospace;
 }
-
 .masthead-title {
     font-family: 'Playfair Display', serif;
     font-size: 2.8rem;
@@ -167,14 +123,11 @@ header {visibility: hidden;}
     line-height: 1.1;
     margin: 0.3rem 0 0.2rem;
 }
-
 .masthead-deck {
     font-size: 1.05rem;
     color: var(--muted);
     font-weight: 300;
-    max-width: 600px;
 }
-
 .masthead-rule {
     height: 3px;
     background: linear-gradient(90deg, var(--navy) 0%, var(--amber) 40%, transparent 100%);
@@ -182,36 +135,14 @@ header {visibility: hidden;}
     border: none;
 }
 
-/* ── STAT CARDS ── */
-.stat-row {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1px;
-    background: var(--border);
-    border: 1px solid var(--border);
-    margin: 1.5rem 0;
-}
-
 .stat-card {
     background: var(--white);
     padding: 1.2rem 1.5rem;
-    position: relative;
+    border: 1px solid var(--border);
+    border-top: 3px solid var(--navy);
+    height: 100%;
 }
-
-.stat-card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 3px;
-    background: var(--navy);
-}
-
-.stat-card.highlight::before {
-    background: var(--amber);
-}
-
+.stat-card.highlight { border-top-color: var(--amber); }
 .stat-value {
     font-family: 'Playfair Display', serif;
     font-size: 2rem;
@@ -219,7 +150,6 @@ header {visibility: hidden;}
     color: var(--navy);
     line-height: 1;
 }
-
 .stat-label {
     font-size: 0.72rem;
     text-transform: uppercase;
@@ -227,19 +157,16 @@ header {visibility: hidden;}
     color: var(--muted);
     margin-top: 0.4rem;
 }
-
 .stat-delta {
     font-family: 'DM Mono', monospace;
     font-size: 0.82rem;
     margin-top: 0.5rem;
     font-weight: 500;
 }
-
 .stat-delta.up { color: var(--red); }
 .stat-delta.down { color: var(--green); }
 .stat-delta.neutral { color: var(--muted); }
 
-/* ── SECTION HEADERS ── */
 .section-label {
     font-size: 0.68rem;
     letter-spacing: 0.15em;
@@ -248,18 +175,16 @@ header {visibility: hidden;}
     font-family: 'DM Mono', monospace;
     border-top: 1px solid var(--border);
     padding-top: 0.8rem;
-    margin: 2rem 0 0.8rem;
+    margin: 2rem 0 0.3rem;
 }
-
 .section-title {
     font-family: 'Playfair Display', serif;
     font-size: 1.5rem;
     font-weight: 700;
     color: var(--navy);
-    margin-bottom: 0.3rem;
+    margin-bottom: 0.8rem;
 }
 
-/* ── INSIGHT BOX ── */
 .insight {
     background: var(--cream);
     border-left: 4px solid var(--amber);
@@ -270,79 +195,39 @@ header {visibility: hidden;}
     line-height: 1.7;
 }
 
-.insight strong {
-    color: var(--navy);
-}
-
-/* ── RANKING LIST ── */
 .rank-item {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.7rem 1rem;
+    padding: 0.65rem 1rem;
     border-bottom: 1px solid var(--cream);
     background: var(--white);
-    transition: background 0.15s;
 }
-
-.rank-item:hover {
-    background: var(--cream);
-}
-
+.rank-item:hover { background: var(--cream); }
 .rank-number {
     font-family: 'DM Mono', monospace;
     font-size: 0.8rem;
     color: var(--muted);
     width: 1.5rem;
 }
-
-.rank-name {
-    flex: 1;
-    font-size: 0.9rem;
-    color: var(--ink);
-    padding: 0 0.8rem;
-}
-
+.rank-name { flex: 1; font-size: 0.9rem; color: var(--ink); padding: 0 0.8rem; }
 .rank-value {
     font-family: 'DM Mono', monospace;
     font-size: 0.95rem;
     font-weight: 500;
     color: var(--navy);
 }
-
 .rank-badge {
     display: inline-block;
-    padding: 2px 8px;
+    padding: 2px 6px;
     border-radius: 2px;
-    font-size: 0.7rem;
+    font-size: 0.65rem;
     font-family: 'DM Mono', monospace;
-    margin-left: 0.5rem;
+    margin-left: 0.4rem;
 }
-
 .rank-badge.expensive { background: #fde8e8; color: var(--red); }
 .rank-badge.affordable { background: #e8f5ee; color: var(--green); }
 
-/* ── DATA TABLE ── */
-[data-testid="stDataFrame"] {
-    border: 1px solid var(--border) !important;
-    border-radius: 0 !important;
-}
-
-/* ── SELECTBOX ── */
-[data-testid="stSelectbox"] > div > div {
-    background: var(--white) !important;
-    border: 1px solid var(--border) !important;
-    border-radius: 2px !important;
-    font-family: 'DM Sans', sans-serif !important;
-}
-
-/* ── MULTISELECT ── */
-[data-testid="stMultiSelect"] > div {
-    border: 1px solid var(--border) !important;
-    border-radius: 2px !important;
-}
-
-/* ── CAPTION ── */
 .chart-caption {
     font-size: 0.75rem;
     color: var(--muted);
@@ -352,7 +237,6 @@ header {visibility: hidden;}
     border-top: 1px solid var(--border);
 }
 
-/* ── FOOTER ── */
 .dash-footer {
     margin-top: 3rem;
     padding-top: 1rem;
@@ -361,12 +245,11 @@ header {visibility: hidden;}
     color: var(--muted);
     font-family: 'DM Mono', monospace;
 }
-
 </style>
 """, unsafe_allow_html=True)
 
 # ============================================================
-# PLOTLY THEME — Editorial / FT Style
+# THEME
 # ============================================================
 
 PLOT_BG = 'rgba(0,0,0,0)'
@@ -382,12 +265,6 @@ PLOT_THEME = dict(
     plot_bgcolor=PLOT_BG,
     paper_bgcolor=PLOT_BG,
     font=dict(family='DM Sans', color=TEXT, size=12),
-    legend=dict(
-        bgcolor='rgba(0,0,0,0)',
-        bordercolor=GRID,
-        borderwidth=1,
-        font=dict(size=11)
-    ),
     margin=dict(l=0, r=0, t=30, b=0)
 )
 
@@ -407,6 +284,16 @@ YAXIS = dict(
     tickfont=dict(family='DM Mono', size=11, color=MUTED),
     showgrid=True,
     zeroline=False
+)
+
+LEGEND = dict(bgcolor='rgba(0,0,0,0)', bordercolor=GRID, borderwidth=1)
+LEGEND_H = dict(
+    bgcolor='rgba(0,0,0,0)',
+    bordercolor=GRID,
+    orientation='h',
+    yanchor='bottom', y=1.02,
+    xanchor='left', x=0,
+    font=dict(size=11)
 )
 
 # ============================================================
@@ -443,7 +330,7 @@ def load_data(query):
             st.cache_resource.clear()
             conn = get_connection()
         return pd.read_sql(query, conn)
-    except Exception as e:
+    except Exception:
         st.cache_resource.clear()
         return pd.DataFrame()
 
@@ -485,11 +372,9 @@ def masthead(eyebrow, title, deck):
     <hr class="masthead-rule">
     """, unsafe_allow_html=True)
 
-def stat_card(label, value, delta=None, delta_dir="up", highlight=False):
+def stat_card(label, value, delta=None, delta_dir="neutral", highlight=False):
     cls = "stat-card highlight" if highlight else "stat-card"
-    delta_html = ""
-    if delta:
-        delta_html = f'<div class="stat-delta {delta_dir}">{delta}</div>'
+    delta_html = f'<div class="stat-delta {delta_dir}">{delta}</div>' if delta else ""
     st.markdown(f"""
     <div class="{cls}">
         <div class="stat-value">{value}</div>
@@ -505,12 +390,10 @@ def section(label, title):
     """, unsafe_allow_html=True)
 
 def insight(text):
-    st.markdown(f'<div class="insight">{text}</div>',
-                unsafe_allow_html=True)
+    st.markdown(f'<div class="insight">{text}</div>', unsafe_allow_html=True)
 
 def chart_caption(text):
-    st.markdown(f'<div class="chart-caption">{text}</div>',
-                unsafe_allow_html=True)
+    st.markdown(f'<div class="chart-caption">{text}</div>', unsafe_allow_html=True)
 
 # ============================================================
 # SIDEBAR
@@ -519,7 +402,6 @@ def chart_caption(text):
 def render_sidebar(national_df):
     latest_rent = "€1,497"
     latest_yoy  = "+8.4%"
-
     if not national_df.empty:
         latest = national_df[national_df['year'] == national_df['year'].max()].iloc[0]
         latest_rent = f"€{latest['avg_monthly_rent']:,.0f}"
@@ -528,25 +410,17 @@ def render_sidebar(national_df):
     st.sidebar.markdown(f"""
     <div class="sidebar-logo">
         <div style="font-size:0.7rem;letter-spacing:0.15em;
-                    text-transform:uppercase;color:#5a6a7a;">
-            Ireland
-        </div>
+                    text-transform:uppercase;color:#5a6a7a;">Ireland</div>
         <div class="sidebar-title">Rent<br>Tracker</div>
         <div class="sidebar-subtitle">2008 — 2024</div>
     </div>
     """, unsafe_allow_html=True)
 
-    st.sidebar.markdown(
-        '<div class="sidebar-nav-label">Navigate</div>',
-        unsafe_allow_html=True
-    )
-
     page = st.sidebar.radio(
-        "",
-        ["National Trends",
-         "County Comparison",
-         "Bedroom Analysis",
-         "Falling Rents"]
+        "Navigate",
+        ["National Trends", "County Comparison",
+         "Bedroom Analysis", "Falling Rents"],
+        label_visibility="hidden"
     )
 
     st.sidebar.markdown(f"""
@@ -555,9 +429,7 @@ def render_sidebar(national_df):
         <div class="sidebar-stat-label">National avg. 2024</div>
     </div>
     <div class="sidebar-stat">
-        <div class="sidebar-stat-value" style="color:#e8a020;">
-            {latest_yoy}
-        </div>
+        <div class="sidebar-stat-value" style="color:#e8a020;">{latest_yoy}</div>
         <div class="sidebar-stat-label">Year-on-year change</div>
     </div>
     <div class="sidebar-stat">
@@ -568,15 +440,12 @@ def render_sidebar(national_df):
         <div class="sidebar-stat-value">26</div>
         <div class="sidebar-stat-label">Counties covered</div>
     </div>
-    <div style="padding:1.5rem;border-top:1px solid rgba(255,255,255,0.07);
-                margin-top:1rem;">
+    <div style="padding:1.5rem;border-top:1px solid rgba(255,255,255,0.07);margin-top:1rem;">
         <div style="font-size:0.7rem;color:#3a4a5a;line-height:1.8;">
             Source: RTB / CSO Ireland<br>
             Updated annually<br><br>
             <a href="https://github.com/nameisrohit/ireland-rent-tracker"
-               style="color:#e8a020;text-decoration:none;">
-               GitHub ↗
-            </a>
+               style="color:#e8a020;text-decoration:none;">GitHub ↗</a>
         </div>
     </div>
     """, unsafe_allow_html=True)
@@ -598,13 +467,12 @@ def page_national_trends(df):
         st.warning("No data available.")
         return
 
-    latest   = df[df['year'] == df['year'].max()].iloc[0]
-    earliest = df[df['year'] == df['year'].min()].iloc[0]
-    bottom   = df.loc[df['avg_monthly_rent'].idxmin()]
+    latest      = df[df['year'] == df['year'].max()].iloc[0]
+    earliest    = df[df['year'] == df['year'].min()].iloc[0]
+    bottom      = df.loc[df['avg_monthly_rent'].idxmin()]
     total_change = ((latest['avg_monthly_rent'] - earliest['avg_monthly_rent'])
-                   / earliest['avg_monthly_rent'] * 100)
+                    / earliest['avg_monthly_rent'] * 100)
 
-    # Stat cards
     col1, col2, col3, col4 = st.columns(4)
     with col1:
         stat_card("Average rent — 2024",
@@ -614,7 +482,7 @@ def page_national_trends(df):
     with col2:
         stat_card("Average rent — 2008",
                   f"€{earliest['avg_monthly_rent']:,.0f}",
-                  "Base year", "neutral")
+                  "Base year")
     with col3:
         stat_card("Total increase since 2008",
                   f"{total_change:.1f}%",
@@ -632,41 +500,31 @@ def page_national_trends(df):
         f"rents have risen almost every year since 2013."
     )
 
-    # Main trend chart
     section("Chart 1 of 2", "Average Monthly Rent 2008–2024")
 
     fig = go.Figure()
-
-    # Recession shading
-    fig.add_vrect(x0=2008.5, x1=2012.5,
-                  fillcolor="#fde8e8", opacity=0.4,
-                  layer="below", line_width=0,
-                  annotation_text="Financial Crisis",
-                  annotation_position="top left",
-                  annotation_font=dict(size=10, color=RED))
-
-    # Area fill
+    fig.add_vrect(
+        x0=2008.5, x1=2012.5,
+        fillcolor="#fde8e8", opacity=0.4,
+        layer="below", line_width=0,
+        annotation_text="Financial Crisis",
+        annotation_position="top left",
+        annotation_font=dict(size=10, color=RED)
+    )
     fig.add_trace(go.Scatter(
         x=df['year'], y=df['avg_monthly_rent'],
         fill='tozeroy',
         fillcolor='rgba(13,27,42,0.06)',
         line=dict(color=NAVY, width=2.5),
         mode='lines+markers',
-        marker=dict(
-            size=7, color=NAVY,
-            line=dict(color='white', width=2)
-        ),
-        hovertemplate=(
-            '<b>%{x}</b><br>'
-            'Average rent: €%{y:,.0f}/month'
-            '<extra></extra>'
-        )
+        marker=dict(size=7, color=NAVY, line=dict(color='white', width=2)),
+        hovertemplate='<b>%{x}</b><br>€%{y:,.0f}/month<extra></extra>'
     ))
 
-    # Annotations
+    bottom_row = df.loc[df['avg_monthly_rent'].idxmin()]
     fig.add_annotation(
-        x=int(bottom['year']), y=bottom['avg_monthly_rent'],
-        text=f"Low: €{bottom['avg_monthly_rent']:,.0f}",
+        x=int(bottom_row['year']), y=bottom_row['avg_monthly_rent'],
+        text=f"Low: €{bottom_row['avg_monthly_rent']:,.0f}",
         showarrow=True, arrowhead=2, ay=-40,
         arrowcolor=GREEN, font=dict(size=10, color=GREEN),
         bgcolor='rgba(255,255,255,0.9)',
@@ -690,30 +548,22 @@ def page_national_trends(df):
         showlegend=False
     )
     st.plotly_chart(fig, use_container_width=True)
-    chart_caption(
-        "Source: RTB Average Monthly Rent Report, Central Statistics Office Ireland. "
-        "Shaded area indicates financial crisis period."
-    )
+    chart_caption("Source: RTB Average Monthly Rent Report, CSO Ireland.")
 
-    # YoY chart
     section("Chart 2 of 2", "Year-on-Year Percentage Change")
 
     yoy_df = df.dropna(subset=['yoy_change_pct'])
     colors = [RED if x > 0 else GREEN for x in yoy_df['yoy_change_pct']]
 
     fig2 = go.Figure(go.Bar(
-        x=yoy_df['year'],
-        y=yoy_df['yoy_change_pct'],
-        marker_color=colors,
-        marker_line_width=0,
+        x=yoy_df['year'], y=yoy_df['yoy_change_pct'],
+        marker_color=colors, marker_line_width=0,
         text=yoy_df['yoy_change_pct'].apply(lambda x: f"{x:+.1f}%"),
         textposition='outside',
         textfont=dict(family='DM Mono', size=10, color=MUTED),
-        hovertemplate='<b>%{x}</b><br>Change: %{y:+.2f}%<extra></extra>'
+        hovertemplate='<b>%{x}</b><br>%{y:+.2f}%<extra></extra>'
     ))
-
     fig2.add_hline(y=0, line_color=GRID, line_width=1.5)
-
     fig2.update_layout(
         **PLOT_THEME,
         xaxis=dict(**XAXIS, dtick=1, tickformat='d'),
@@ -722,9 +572,7 @@ def page_national_trends(df):
         showlegend=False
     )
     st.plotly_chart(fig2, use_container_width=True)
-    chart_caption(
-        "Red bars indicate rent increases. Green bars indicate rent decreases."
-    )
+    chart_caption("Red = rent increased. Green = rent decreased.")
 
     st.markdown("""
     <div class="dash-footer">
@@ -763,43 +611,32 @@ def page_county_comparison(county_df):
 
     with col1:
         section("Chart", f"Average Monthly Rent by County — {selected_year}")
-
         sorted_asc = year_data.sort_values('avg_monthly_rent', ascending=True)
-
         fig = px.bar(
             sorted_asc,
-            x='avg_monthly_rent',
-            y='county',
+            x='avg_monthly_rent', y='county',
             orientation='h',
             color='avg_monthly_rent',
             color_continuous_scale=[
-                [0.0, '#e8f5ee'],
-                [0.3, '#1a7a4a'],
-                [0.7, '#e8a020'],
+                [0.0, '#1a7a4a'],
+                [0.5, '#e8a020'],
                 [1.0, '#c0392b']
             ],
-            labels={
-                'avg_monthly_rent': 'Average Monthly Rent (€)',
-                'county': ''
-            }
+            labels={'avg_monthly_rent': 'Average Monthly Rent (€)', 'county': ''}
         )
-
         fig.update_layout(
             **PLOT_THEME,
             xaxis=dict(**XAXIS, tickprefix='€', tickformat=',.0f'),
-            yaxis=dict(**YAXIS, tickfont=dict(size=10)),
+            yaxis=dict(**YAXIS),
             coloraxis_showscale=False,
             height=620
         )
         st.plotly_chart(fig, use_container_width=True)
-        chart_caption(
-            f"Average monthly rent across all tracked counties. {selected_year}."
-        )
+        chart_caption(f"Average monthly rent by county. {selected_year}.")
 
     with col2:
         section("Rankings", f"Most Expensive — {selected_year}")
         top10 = year_data.head(10).reset_index(drop=True)
-
         st.markdown('<div style="border:1px solid #d4cfc7;">', unsafe_allow_html=True)
         for i, row in top10.iterrows():
             rank = i + 1
@@ -817,7 +654,6 @@ def page_county_comparison(county_df):
         bottom5 = year_data.tail(5).sort_values(
             'avg_monthly_rent', ascending=True
         ).reset_index(drop=True)
-
         st.markdown('<div style="border:1px solid #d4cfc7;">', unsafe_allow_html=True)
         for i, row in bottom5.iterrows():
             st.markdown(f"""
@@ -831,30 +667,21 @@ def page_county_comparison(county_df):
             """, unsafe_allow_html=True)
         st.markdown('</div>', unsafe_allow_html=True)
 
-    # Trend comparison
     section("Chart", "County Rent Trends Over Time")
-
     counties = sorted(county_df['county'].unique())
     defaults = [c for c in ['Dublin', 'Cork', 'Galway', 'Limerick']
                 if c in counties][:4] or counties[:4]
-
-    selected = st.multiselect(
-        "Select counties to compare",
-        counties, default=defaults
-    )
-
+    selected = st.multiselect("Select counties to compare",
+                              counties, default=defaults)
     if selected:
         filtered = county_df[county_df['county'].isin(selected)]
         fig3 = px.line(
             filtered, x='year', y='avg_monthly_rent',
             color='county', markers=True,
-            labels={
-                'year': 'Year',
-                'avg_monthly_rent': 'Avg Monthly Rent (€)',
-                'county': 'County'
-            },
-            color_discrete_sequence=[NAVY, AMBER, RED, GREEN,
-                                      '#6c5ce7', '#00b894']
+            labels={'year': 'Year',
+                    'avg_monthly_rent': 'Avg Monthly Rent (€)',
+                    'county': 'County'},
+            color_discrete_sequence=[NAVY, AMBER, RED, GREEN, '#6c5ce7', '#00b894']
         )
         fig3.update_layout(
             **PLOT_THEME,
@@ -862,11 +689,7 @@ def page_county_comparison(county_df):
             yaxis=dict(**YAXIS, tickprefix='€', tickformat=',.0f'),
             hovermode='x unified',
             height=400,
-            legend=dict(
-                orientation='h',
-                yanchor='bottom', y=1.02,
-                xanchor='left', x=0
-            )
+            legend=LEGEND_H
         )
         fig3.update_traces(line_width=2, marker_size=6)
         st.plotly_chart(fig3, use_container_width=True)
@@ -909,8 +732,7 @@ def page_bedroom_analysis(bedrooms_df):
         if bed_data.empty:
             continue
         fig.add_trace(go.Scatter(
-            x=bed_data['year'],
-            y=bed_data['avg_monthly_rent'],
+            x=bed_data['year'], y=bed_data['avg_monthly_rent'],
             name=bed,
             mode='lines+markers',
             line=dict(color=colors_bed.get(bed, NAVY), width=2.5),
@@ -924,12 +746,7 @@ def page_bedroom_analysis(bedrooms_df):
         yaxis=dict(**YAXIS, tickprefix='€', tickformat=',.0f'),
         hovermode='x unified',
         height=400,
-        legend=dict(
-            orientation='h',
-            yanchor='bottom', y=1.02,
-            xanchor='left', x=0,
-            font=dict(size=11)
-        )
+        legend=LEGEND_H
     )
     st.plotly_chart(fig, use_container_width=True)
     chart_caption("National averages. Source: RTB/CSO Ireland.")
@@ -974,25 +791,20 @@ def page_bedroom_analysis(bedrooms_df):
             ))
             fig2.update_layout(
                 **PLOT_THEME,
-                xaxis=XAXIS,
+                xaxis=dict(**XAXIS),
                 yaxis=dict(**YAXIS, tickprefix='€', tickformat=',.0f'),
                 height=350,
                 showlegend=False,
                 title=dict(
                     text=f"{selected_county} — {selected_year}",
-                    font=dict(
-                        family='Playfair Display',
-                        size=14,
-                        color=NAVY
-                    )
+                    font=dict(family='Playfair Display', size=14, color=NAVY)
                 )
             )
             st.plotly_chart(fig2, use_container_width=True)
 
         with col_table:
             st.markdown(
-                f'<div class="section-label">Data Table — '
-                f'{selected_county} {selected_year}</div>',
+                f'<div class="section-label">Data — {selected_county} {selected_year}</div>',
                 unsafe_allow_html=True
             )
             st.markdown('<div style="border:1px solid #d4cfc7;">',
@@ -1001,14 +813,12 @@ def page_bedroom_analysis(bedrooms_df):
                 st.markdown(f"""
                 <div class="rank-item">
                     <div class="rank-name">{row['bedrooms']}</div>
-                    <div class="rank-value">
-                        €{row['avg_monthly_rent']:,.0f}
-                    </div>
+                    <div class="rank-value">€{row['avg_monthly_rent']:,.0f}</div>
                 </div>
                 """, unsafe_allow_html=True)
             st.markdown('</div>', unsafe_allow_html=True)
     else:
-        st.info(f"No bedroom data available for {selected_county} in {selected_year}.")
+        st.info(f"No data for {selected_county} in {selected_year}.")
 
 # ============================================================
 # PAGE 4 — FALLING RENTS
@@ -1022,53 +832,39 @@ def page_falling_rents(falling_df):
     )
 
     if falling_df.empty:
-        st.info("No areas with falling rents found in the dataset.")
+        st.info("No areas with falling rents found.")
         return
 
-    # Stats
     col1, col2, col3, col4 = st.columns(4)
     with col1:
-        stat_card("Areas with falling rents",
-                  str(len(falling_df)), highlight=True)
+        stat_card("Areas with falling rents", str(len(falling_df)), highlight=True)
     with col2:
         stat_card("Biggest single drop",
                   f"{falling_df['change_pct'].min():.1f}%",
                   "Year-on-year", "down")
     with col3:
-        stat_card("Most affected county",
-                  falling_df.iloc[0]['county'])
+        stat_card("Most affected county", falling_df.iloc[0]['county'])
     with col4:
         stat_card("Average drop",
                   f"{falling_df['change_pct'].mean():.1f}%",
-                  "Across falling areas", "down")
+                  "Across all falling areas", "down")
 
     insight(
         f"While national rents are rising, <strong>{len(falling_df)} specific areas</strong> "
         f"have recorded year-on-year decreases. The largest single drop was "
         f"<strong>{falling_df['change_pct'].min():.1f}%</strong> in "
-        f"{falling_df.iloc[0]['location']}, {falling_df.iloc[0]['county']}. "
-        f"These are often smaller towns or areas with new housing supply."
+        f"{falling_df.iloc[0]['location']}, {falling_df.iloc[0]['county']}."
     )
 
     section("Chart", "Top 20 Areas With Largest Rent Decreases")
 
-    top20 = falling_df.head(20)
-
     fig = px.bar(
-        top20,
-        x='change_pct',
-        y='location',
+        falling_df.head(20),
+        x='change_pct', y='location',
         orientation='h',
         color='change_pct',
-        color_continuous_scale=[
-            [0.0, RED],
-            [0.5, AMBER],
-            [1.0, GREEN]
-        ],
-        labels={
-            'change_pct': 'Year-on-Year Change (%)',
-            'location': ''
-        },
+        color_continuous_scale=[[0.0, RED], [0.5, AMBER], [1.0, GREEN]],
+        labels={'change_pct': 'Year-on-Year Change (%)', 'location': ''},
         hover_data={
             'county': True,
             'avg_monthly_rent': ':,.0f',
@@ -1077,22 +873,17 @@ def page_falling_rents(falling_df):
             'change_pct': ':.2f'
         }
     )
-
     fig.update_layout(
         **PLOT_THEME,
         xaxis=dict(**XAXIS, ticksuffix='%'),
-        yaxis=dict(**YAXIS, tickfont=dict(size=10)),
+        yaxis=dict(**YAXIS),
         coloraxis_showscale=False,
         height=520
     )
     st.plotly_chart(fig, use_container_width=True)
-    chart_caption(
-        "Negative values indicate rent decreases. "
-        "Source: RTB Average Monthly Rent Report, CSO Ireland."
-    )
+    chart_caption("Source: RTB Average Monthly Rent Report, CSO Ireland.")
 
     section("Data", "Full Dataset — All Areas With Falling Rents")
-
     display = falling_df[[
         'year', 'location', 'county',
         'prev_year_rent', 'avg_monthly_rent', 'change_pct'
