@@ -273,6 +273,36 @@ header {visibility: hidden;}
     color: var(--muted);
     font-family: 'DM Mono', monospace;
 }
+
+/* Floating menu button for mobile */
+[data-testid="collapsedControl"] {
+    display: flex !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    width: 48px !important;
+    height: 48px !important;
+    background: var(--navy) !important;
+    border-radius: 0 8px 8px 0 !important;
+    align-items: center !important;
+    justify-content: center !important;
+    position: fixed !important;
+    top: 45% !important;
+    left: 0 !important;
+    z-index: 99999 !important;
+    cursor: pointer !important;
+    box-shadow: 3px 0 12px rgba(0,0,0,0.3) !important;
+}
+
+[data-testid="collapsedControl"] svg {
+    fill: #ffffff !important;
+    width: 24px !important;
+    height: 24px !important;
+}
+
+[data-testid="collapsedControl"]:hover {
+    background: #1a3320 !important;
+}
+
 </style>
 """, unsafe_allow_html=True)
 
