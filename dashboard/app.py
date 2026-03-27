@@ -908,6 +908,31 @@ def main():
 
     page = render_sidebar(national)
 
+    # Mobile navigation — shows when sidebar is hidden
+    st.markdown("""
+    <style>
+    /* Show mobile nav only on small screens */
+    .mobile-nav { display: none; }
+    @media (max-width: 768px) {
+        .mobile-nav { display: block; }
+    }
+    </style>
+    """, unsafe_allow_html=True)
+
+    st.markdown('<div class="mobile-nav">', unsafe_allow_html=True)
+    mobile_page = st.selectbox(
+        "Navigate",
+        ["National Trends", "County Comparison",
+         "Bedroom Analysis", "Falling Rents"],
+        key="mobile_nav_select"
+    )
+    st.markdown('</div>', unsafe_allow_html=True)
+
+    # Use mobile selection if sidebar is not available
+    # On mobile streamlit hides sidebar so we use the dropdown
+    import streamlit.components.v1 as components
+    page = mobile_page
+
     if page == "National Trends":
         page_national_trends(national)
     elif page == "County Comparison":
