@@ -64,6 +64,31 @@ header {visibility: hidden;}
 }
 [data-testid="stSidebar"] * { color: #c8d0dc !important; }
 
+/* Make sidebar toggle arrow bigger and visible on mobile */
+[data-testid="collapsedControl"] {
+    display: flex !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    width: 40px !important;
+    height: 40px !important;
+    background: var(--navy) !important;
+    border-radius: 0 8px 8px 0 !important;
+    align-items: center !important;
+    justify-content: center !important;
+    position: fixed !important;
+    top: 50% !important;
+    left: 0 !important;
+    z-index: 9999 !important;
+    cursor: pointer !important;
+    box-shadow: 2px 0 8px rgba(0,0,0,0.2) !important;
+}
+
+[data-testid="collapsedControl"] svg {
+    fill: #ffffff !important;
+    width: 20px !important;
+    height: 20px !important;
+}
+
 .sidebar-logo {
     padding: 2rem 1.5rem 1rem;
     border-bottom: 1px solid rgba(255,255,255,0.1);
