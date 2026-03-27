@@ -966,6 +966,44 @@ def main():
 
     page = render_sidebar(national)
 
+    # Top navigation for mobile
+    st.markdown("""
+    <style>
+    .top-nav { display: none; }
+    @media (max-width: 640px) {
+        .top-nav { 
+            display: flex;
+            gap: 8px;
+            padding: 8px 0 16px;
+            overflow-x: auto;
+            border-bottom: 1px solid #d4cfc7;
+            margin-bottom: 1rem;
+        }
+        .top-nav a {
+            white-space: nowrap;
+            padding: 6px 14px;
+            background: #0d1b2a;
+            color: white !important;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            text-decoration: none;
+            font-family: 'DM Sans', sans-serif;
+        }
+    }
+    </style>
+    <div class="top-nav">
+        <a href="?page=National+Trends">📈 National</a>
+        <a href="?page=County+Comparison">🗺️ County</a>
+        <a href="?page=Bedroom+Analysis">🛏️ Bedrooms</a>
+        <a href="?page=Falling+Rents">📉 Falling</a>
+    </div>
+    """, unsafe_allow_html=True)
+
+    # Handle URL params for mobile nav
+    params = st.query_params
+    if "page" in params:
+        page = params["page"]
+
     if page == "National Trends":
         page_national_trends(national)
     elif page == "County Comparison":
